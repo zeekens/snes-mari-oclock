@@ -31,3 +31,13 @@ sources and the pinned-URL fallback. Installation and reconnect restoration in
 a live HA instance remain pending. Physical panel appearance was not visually
 confirmed by this test. These results cover the five files in this catalog,
 not arbitrary maximum-size packs or arbitrary other hardware.
+
+## Native Scene selector update — packs-1.1.0
+
+The firmware was updated so the existing ESPHome Scene selector exposes all
+eight choices. All three built-ins and all five GitHub-backed selections passed
+real-device activation tests through that actual select entity. The running HA
+instance independently reported the same eight options. The clock was restored
+to Cape Luigi and emitted the successful-boot marker. No extra HA helper package
+is needed for selecting these eight scenes. Boot/reconnect restoration is
+implemented; a dedicated reboot/outage restoration test remains pending.

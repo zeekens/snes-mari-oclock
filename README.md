@@ -45,6 +45,16 @@ previous scene.
 
 ## Home Assistant controls
 
+With `packs-1.1.0` firmware, use the existing ESPHome **Scene** selector: it offers
+all eight scenes and automatically downloads the five remote packs from the
+pinned GitHub library above. No extra HA package is required for that flow.
+Remote choices persist and are requested again after boot/Wi-Fi reconnection,
+once network and clock time are ready for TLS.
+
+The optional package below provides a separate source selector for HA hosting
+or a custom GitHub library. Use one controller consistently: its desired face
+and the native Scene selector do not synchronize with each other.
+
 1. Copy [the HA package](home-assistant/snes_clock_packs.yaml) into your HA
    `packages/` directory. If needed, enable packages under the existing
    `homeassistant:` configuration with `packages: !include_dir_named packages`.
