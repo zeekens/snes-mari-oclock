@@ -24,7 +24,7 @@ scene until a controller reapplies the selection.
 Use an immutable, full 40-character commit SHA as the library base:
 
 ```text
-https://raw.githubusercontent.com/zeekens/snes-mari-oclock/FULL_COMMIT_SHA/packs
+https://raw.githubusercontent.com/zeekens/snes-mari-oclock/03400729f378f8e02f927c812e9439bff8cc1c9a/packs
 ```
 
 Append a filename from the catalog and supply its complete SHA-256 to the device:
@@ -32,11 +32,11 @@ Append a filename from the catalog and supply its complete SHA-256 to the device
 ```yaml
 action: esphome.snes_clock_load_scene_pack
 data:
-  pack_url: https://raw.githubusercontent.com/zeekens/snes-mari-oclock/FULL_COMMIT_SHA/packs/ghost-house-5153597b60d369d7.scn
+  pack_url: https://raw.githubusercontent.com/zeekens/snes-mari-oclock/03400729f378f8e02f927c812e9439bff8cc1c9a/packs/ghost-house-5153597b60d369d7.scn
   expected_hash: 5153597b60d369d7eeeecfd9cef06b46e9d6750c8428a07f4eda017eb4762f5b
 ```
 
-Use the real commit SHA, not the placeholder above. Branch URLs, HTML `blob`
+The URL above is the device-tested immutable version. Branch URLs, HTML `blob`
 pages, redirects, authentication tokens, and private-repository downloads are
 unsupported. HTTPS certificates and the expected file hash are verified.
 Request acceptance is asynchronous: check Pack Status becomes `ready` and
@@ -54,8 +54,9 @@ previous scene.
    diagnostics and the status binary sensor.
 3. Validate HA configuration and restart to load the package.
 4. Add [the dashboard card](home-assistant/dashboard-card.yaml).
-5. Set the GitHub Library URL to the commit-pinned base above, choose GitHub as
-   source, then select a face. Apply face retries the current choice.
+5. Choose GitHub as source, then select a face. The script defaults to the
+   tested commit above when the GitHub Library URL helper is empty. Set a
+   different commit-pinned URL to override it. Apply face retries the choice.
 
 Alternatively copy `packs/` contents into `/config/www/snes-clock/`, set the HA
 Library URL to `http://homeassistant.local:8123/local/snes-clock` (adjust hostname
@@ -73,8 +74,8 @@ retry loop is implemented.
 
 All five packs passed local/native parser and pixel-equivalence tests and actual
 ESP32 LAN HTTP tests, including invalid-download retention, cancellation, and
-supersession. GitHub-hosted device validation is recorded separately after
-publication. HA package installation and physical display verification are
+supersession. All five files also downloaded directly from GitHub and activated
+on the ESP32; see [device validation](VALIDATION.md). HA package installation and physical display verification are
 installation-specific acceptance checks.
 
 The artwork is game-derived. See [ARTWORK.md](ARTWORK.md) for provenance and

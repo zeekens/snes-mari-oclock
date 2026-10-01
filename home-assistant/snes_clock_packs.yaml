@@ -66,8 +66,11 @@ script:
             file: bonus-room-4f1be26e2a384c86.scn
             bytes: 1484
             sha256: 4f1be26e2a384c8672588d50917662c1a414fb4aaa7b2a7664ce021b4e75e71a
-        pack_base: '{{ states(''input_text.snes_clock_github_pack_base'') if is_state(''input_select.snes_clock_pack_source'',
-          ''GitHub'') else states(''input_text.snes_clock_ha_pack_base'') }}'
+        github_default_base: https://raw.githubusercontent.com/zeekens/snes-mari-oclock/03400729f378f8e02f927c812e9439bff8cc1c9a/packs
+        pack_base: '{{ (states(''input_text.snes_clock_github_pack_base'') if states(''input_text.snes_clock_github_pack_base'')
+          not in ['''', ''unknown'', ''unavailable''] else github_default_base) if
+          is_state(''input_select.snes_clock_pack_source'', ''GitHub'') else states(''input_text.snes_clock_ha_pack_base'')
+          }}'
     - choose:
       - conditions: '{{ face in [''Mario'', ''Luigi Forest'', ''Cape Luigi Forest'']
           }}'
