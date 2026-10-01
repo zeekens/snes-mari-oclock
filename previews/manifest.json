@@ -1,0 +1,73 @@
+{
+  "fps": 25,
+  "duration_seconds": 12,
+  "native_size": [
+    64,
+    64
+  ],
+  "export_size": [
+    512,
+    512
+  ],
+  "minute_change_seconds": 6,
+  "legacy_background_smoothing": false,
+  "renderer_source_sha256": "4dc8a33a8b8b6c548dc8e1c09ad6c1531592865a963e180631610cd9b667695d",
+  "scenes": [
+    {
+      "id": "mario",
+      "name": "Mario",
+      "gif": "mario.gif",
+      "native_gif": "mario-64.gif",
+      "sha256": "e3213126359591986824d5c3977d982035afc5298da516e0dd54a6d444c822b2"
+    },
+    {
+      "id": "luigi",
+      "name": "Luigi Forest",
+      "gif": "luigi.gif",
+      "native_gif": "luigi-64.gif",
+      "sha256": "e641fc1844a6f84a507a674ba185f6e975ae0297d9ba908a4876a4bb4efeeb46"
+    },
+    {
+      "id": "cape-luigi",
+      "name": "Cape Luigi Forest",
+      "gif": "cape-luigi.gif",
+      "native_gif": "cape-luigi-64.gif",
+      "sha256": "caf3e9bdbbda7967fd1f9495cefeaa4f5cd9c990ecffb32ff4e282c50a2077ab"
+    },
+    {
+      "id": "ghost-house",
+      "name": "Ghost House",
+      "gif": "ghost-house.gif",
+      "native_gif": "ghost-house-64.gif",
+      "sha256": "f65db72344f448bd21aad8854d116de4c80b15ce9041cc72d86bc07e4fa666b8"
+    },
+    {
+      "id": "tide-pool",
+      "name": "Tide Pool",
+      "gif": "tide-pool.gif",
+      "native_gif": "tide-pool-64.gif",
+      "sha256": "eb4d1e11aef03122eb0e49727b0a20d7f65f0106b4d640a8babb2d7a41ff8bd6"
+    },
+    {
+      "id": "lava-fortress",
+      "name": "Lava Fortress",
+      "gif": "lava-fortress.gif",
+      "native_gif": "lava-fortress-64.gif",
+      "sha256": "942300bb42fe36eced4fd204310822400c9bbf3eccc1529adf6990095970f533"
+    },
+    {
+      "id": "star-road",
+      "name": "Star Road",
+      "gif": "star-road.gif",
+      "native_gif": "star-road-64.gif",
+      "sha256": "4440450a0cd88d7c78a120851ab4028ab16a78be4e2cd434924987e2bc5217a7"
+    },
+    {
+      "id": "bonus-room",
+      "name": "Bonus Room",
+      "gif": "bonus-room.gif",
+      "native_gif": "bonus-room-64.gif",
+      "sha256": "6e04ab42c25ba728068e203373a5eda660f5b5e96b59d796a76b0ff40d1c371b"
+    }
+  ]
+}

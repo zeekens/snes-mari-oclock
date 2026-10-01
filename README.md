@@ -19,6 +19,21 @@ require compatible firmware. The device currently supports at most 16 KiB per
 pack and keeps only the selected pack in RAM; rebooting returns to a built-in
 scene until a controller reapplies the selection.
 
+## Animated clock faces
+
+All eight faces, rendered at 25 fps. Each 12-second loop includes a minute change.
+
+| | |
+|---|---|
+| **Mario**<br><img src="previews/mario.gif" width="256" alt="Mario animated clock face"><br>[Native 64×64 GIF](previews/mario-64.gif) | **Luigi Forest**<br><img src="previews/luigi.gif" width="256" alt="Luigi Forest animated clock face"><br>[Native 64×64 GIF](previews/luigi-64.gif) |
+| **Cape Luigi Forest**<br><img src="previews/cape-luigi.gif" width="256" alt="Cape Luigi Forest animated clock face"><br>[Native 64×64 GIF](previews/cape-luigi-64.gif) | **Ghost House**<br><img src="previews/ghost-house.gif" width="256" alt="Ghost House animated clock face"><br>[Native 64×64 GIF](previews/ghost-house-64.gif) |
+| **Tide Pool**<br><img src="previews/tide-pool.gif" width="256" alt="Tide Pool animated clock face"><br>[Native 64×64 GIF](previews/tide-pool-64.gif) | **Lava Fortress**<br><img src="previews/lava-fortress.gif" width="256" alt="Lava Fortress animated clock face"><br>[Native 64×64 GIF](previews/lava-fortress-64.gif) |
+| **Star Road**<br><img src="previews/star-road.gif" width="256" alt="Star Road animated clock face"><br>[Native 64×64 GIF](previews/star-road-64.gif) | **Bonus Room**<br><img src="previews/bonus-room.gif" width="256" alt="Bonus Room animated clock face"><br>[Native 64×64 GIF](previews/bonus-room-64.gif) |
+
+[Download all eight GIFs in native and enlarged sizes](previews/all-eight-clock-faces.zip).
+
+Crisp nearest-neighbour enlargement; legacy background smoothing is disabled. These GIFs are previews, not installable packs. See [artwork provenance](ARTWORK.md).
+
 ## Load from GitHub
 
 Use an immutable, full 40-character commit SHA as the library base:

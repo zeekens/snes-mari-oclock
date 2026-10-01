@@ -16,3 +16,12 @@ The sheets credit “Barack Obama” for ripping/recolouring Nintendo game artwo
 The pack conversion uses exact native crops, preserves their palettes, and turns
 the sheet background key into transparency. Scene backgrounds, clock digits,
 positioning, and animation behavior are rendered by the compatible firmware.
+
+## Original-face GIF previews
+
+The gallery also includes Mario, Luigi Forest and Cape Luigi Forest. Mario
+sprites come from the project's supplied reference screenshots. Luigi and Cape
+Luigi use the native Mario & Luigi sheet credited to “the shirt ninja”, obtained
+from [Mario Universe](https://www.mariouniverse.com/wp-content/img/sprites/snes/smw/mario-luigi.gif).
+Backgrounds and clock layouts are code-drawn adaptations. The artwork limitations
+above also apply to the GIF previews and their download bundle.
