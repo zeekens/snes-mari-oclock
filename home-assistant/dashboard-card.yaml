@@ -1,0 +1,12 @@
+type: entities
+title: SNES Clock Packs
+entities:
+- input_select.snes_clock_face
+- input_select.snes_clock_pack_source
+- input_text.snes_clock_ha_pack_base
+- input_text.snes_clock_github_pack_base
+- script.snes_clock_apply_face
+- sensor.snes_clock_active_scene
+- sensor.snes_clock_pack_status
+- sensor.snes_clock_pack_error
+- sensor.snes_clock_pack_bytes

@@ -1,0 +1,47 @@
+{
+  "format": "SNPK",
+  "version": 1,
+  "max_pack_bytes": 16384,
+  "scenes": [
+    {
+      "id": "ghost-house",
+      "name": "Ghost House",
+      "engine": 1,
+      "file": "ghost-house-5153597b60d369d7.scn",
+      "bytes": 1192,
+      "sha256": "5153597b60d369d7eeeecfd9cef06b46e9d6750c8428a07f4eda017eb4762f5b"
+    },
+    {
+      "id": "tide-pool",
+      "name": "Tide Pool",
+      "engine": 2,
+      "file": "tide-pool-84e168bf9fd78164.scn",
+      "bytes": 344,
+      "sha256": "84e168bf9fd781643e59e33d713ee096ee7bdda41d728a2caad3f6e400387cae"
+    },
+    {
+      "id": "lava-fortress",
+      "name": "Lava Fortress",
+      "engine": 3,
+      "file": "lava-fortress-be52d23e28717e59.scn",
+      "bytes": 2840,
+      "sha256": "be52d23e28717e59da903348a49ff45fbb200691034a0434a99a8a2d8bddd2d4"
+    },
+    {
+      "id": "star-road",
+      "name": "Star Road",
+      "engine": 4,
+      "file": "star-road-258e165b3fe12bea.scn",
+      "bytes": 324,
+      "sha256": "258e165b3fe12beaf210b9b5490be6eeb3f15c123fc02d6fd18129e82b6439e0"
+    },
+    {
+      "id": "bonus-room",
+      "name": "Bonus Room",
+      "engine": 5,
+      "file": "bonus-room-4f1be26e2a384c86.scn",
+      "bytes": 1484,
+      "sha256": "4f1be26e2a384c8672588d50917662c1a414fb4aaa7b2a7664ce021b4e75e71a"
+    }
+  ]
+}
