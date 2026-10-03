@@ -1,0 +1,569 @@
+{
+  "name": "Final Fantasy VI clock animation collection",
+  "version": "1.0.0",
+  "type": "preview-animation-assets",
+  "native_size": [
+    64,
+    64
+  ],
+  "preview_size": [
+    512,
+    512
+  ],
+  "fps": 25,
+  "duration_ms": 12000,
+  "clock_time": "12:34 (baked into previews)",
+  "items": [
+    {
+      "n": 1,
+      "title": "Narshe / Snowfall",
+      "character": "Terra",
+      "motion": "Terra crosses the snowy street, pauses, walks fully off the right edge and returns from the left.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "01-narshe-64.gif",
+          "sha256": "5a8f6f6074e85ad5975273c473ccf1be8cb86e8da257d4779bef5296196cba16",
+          "bytes": 412377
+        },
+        "animated": {
+          "path": "01-narshe.gif",
+          "sha256": "5700e81da53ab9d33008efd56101259e437c197a1adebe3770eb362664883113",
+          "bytes": 2319292
+        },
+        "native": {
+          "path": "01-narshe-64.png",
+          "sha256": "d391d3cd994b23e97b279b60c3c73f2145e963815b191daa4db08f8c2db7ad43",
+          "bytes": 1859
+        },
+        "file": {
+          "path": "01-narshe.png",
+          "sha256": "f0fcd4c901f96a524a8a6c79571d79ec7f03d90d569fc4e9c1babb82d2c8a583",
+          "bytes": 4564
+        }
+      }
+    },
+    {
+      "n": 2,
+      "title": "Figaro / Desert Citadel",
+      "character": "Locke",
+      "motion": "Locke walks in place facing the camera, using his original front-facing walk cycle.",
+      "review_status": "change",
+      "files": {
+        "native_gif": {
+          "path": "02-figaro-64.gif",
+          "sha256": "7dd02b68a57297a3f2cb4bebf7a444352c447c814e72a990d71db12ae4c4b0b5",
+          "bytes": 71128
+        },
+        "animated": {
+          "path": "02-figaro.gif",
+          "sha256": "4d4733544bb5de85e32fd69688c855e504a5d49f512bcdb2f6578f3b3f6a439b",
+          "bytes": 241992
+        },
+        "native": {
+          "path": "02-figaro-64.png",
+          "sha256": "9a54d89d1d1590689b60bfa842fafe8e289cc15c00395d5ac37f0193b3aeb3a8",
+          "bytes": 1753
+        },
+        "file": {
+          "path": "02-figaro.png",
+          "sha256": "a77814bcb8ca88d63cf174b6f3d185d051647a4f94d7c3c6d1ffd88b08077929",
+          "bytes": 4512
+        }
+      }
+    },
+    {
+      "n": 3,
+      "title": "Zozo / Rain & Rooftops",
+      "character": "Locke",
+      "motion": "Locke paces the rain-soaked alley with original walking frames and aligned feet.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "03-zozo-64.gif",
+          "sha256": "2c5e64fdca880651edb5a6cc8964ac72575bc0863e3ed58d4f536e3a7f6540da",
+          "bytes": 415342
+        },
+        "animated": {
+          "path": "03-zozo.gif",
+          "sha256": "064d03ba36eaee272aca866e298d2e3029aa5b164e6abb4c38e4d694beed0edc",
+          "bytes": 3626111
+        },
+        "native": {
+          "path": "03-zozo-64.png",
+          "sha256": "593182f00d3972b0f1d07e8897e41d347198468bd76f9f7cd36e74c441dc5271",
+          "bytes": 2710
+        },
+        "file": {
+          "path": "03-zozo.png",
+          "sha256": "070aae5ad82f54d2d5fbfe0c26ffd4e40f86ea59a80c0f8fe9d97cdbd2fd8a21",
+          "bytes": 6188
+        }
+      }
+    },
+    {
+      "n": 5,
+      "title": "Phantom Train / Last Departure",
+      "character": "Location focus",
+      "motion": "The Phantom Train drives left through scrolling forest, with cycling wheel rods and drifting steam.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "05-phantom-train-64.gif",
+          "sha256": "d8351a43e56bf4f6a9c1795be0a43d02ddced301787d5110d96316447e9cf9f2",
+          "bytes": 454449
+        },
+        "animated": {
+          "path": "05-phantom-train.gif",
+          "sha256": "1c54282295c7667256697b2a7fb151796c2c22e0faf6e5e4850e122ce13ef85e",
+          "bytes": 2987166
+        },
+        "native": {
+          "path": "05-phantom-train-64.png",
+          "sha256": "72601d6784ba2234c75f76680637940bb15d91381f8c3677819763702f0e84f7",
+          "bytes": 2297
+        },
+        "file": {
+          "path": "05-phantom-train.png",
+          "sha256": "5e31fde72bf4671d3f121e27c67c3f66e71c8f798e8a2ae4d94c6387f49db95d",
+          "bytes": 5254
+        }
+      }
+    },
+    {
+      "n": 6,
+      "title": "Blackjack / Above the Clouds",
+      "character": "Location focus",
+      "motion": "The Blackjack sails over a sunset sea, a scrolling island citadel, reflective water and layered clouds.",
+      "review_status": "change",
+      "files": {
+        "native_gif": {
+          "path": "06-blackjack-64.gif",
+          "sha256": "6be33f9e4c80264496000288f2da6d28455b96e1f16d5b7763b47bc67e1f586d",
+          "bytes": 449942
+        },
+        "animated": {
+          "path": "06-blackjack.gif",
+          "sha256": "e1d9f7605f6a111f99eb425044dad5d354f497b13f4968165cf33e08307296b5",
+          "bytes": 2800252
+        },
+        "native": {
+          "path": "06-blackjack-64.png",
+          "sha256": "371d03496a740b196cfaf1fe2059d3f8aafb1fc40484cb9f7ec7ffeeed528b24",
+          "bytes": 2545
+        },
+        "file": {
+          "path": "06-blackjack.png",
+          "sha256": "af668e18002ee5d3367cbbfbc67e44f0faf20e62b48f006ec90ca77a7e7b9040",
+          "bytes": 5562
+        }
+      }
+    },
+    {
+      "n": 7,
+      "title": "Floating Continent / Edge of Ruin",
+      "character": "Shadow",
+      "motion": "Interceptor rushes in from the right, attacks the left edge, rebounds and runs back off the right side as Shadow patrols.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "07-floating-continent-64.gif",
+          "sha256": "6a647c1fea338fc0c87ea59c1df7314f3bd729fa9752413cbb221daac1c16a1c",
+          "bytes": 320532
+        },
+        "animated": {
+          "path": "07-floating-continent.gif",
+          "sha256": "23a65cffe1c99abbdc369c8d0ac7cb131ac71dcfe2feee878b54dc1c52501081",
+          "bytes": 1324466
+        },
+        "native": {
+          "path": "07-floating-continent-64.png",
+          "sha256": "ac88d159780085e1979d3635d23b1e4910f3c6cded0d50de972fde3a3d8f52c0",
+          "bytes": 1635
+        },
+        "file": {
+          "path": "07-floating-continent.png",
+          "sha256": "beff572bd7ad37429d8e80edd80770b1d657a0937e44d3545439bef9fcf9feae",
+          "bytes": 4157
+        }
+      }
+    },
+    {
+      "n": 8,
+      "title": "Magitek / Esper Chamber",
+      "character": "Terra",
+      "motion": "Terra walks between bubbling Esper tanks as green light pulses and indicators blink.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "08-magitek-64.gif",
+          "sha256": "70f2ee406ebf891af27a32ce659113b3e753045c447c3f11c0d21fd33f5eb4f6",
+          "bytes": 157918
+        },
+        "animated": {
+          "path": "08-magitek.gif",
+          "sha256": "9fd49bc2312b83b22e1e962e3970e7b6168de323b921625e39094cf70729fa3a",
+          "bytes": 930117
+        },
+        "native": {
+          "path": "08-magitek-64.png",
+          "sha256": "b4f76240472a85506414b97f5ea3087b4b761eb125f392169689a88b8ea5a726",
+          "bytes": 1799
+        },
+        "file": {
+          "path": "08-magitek.png",
+          "sha256": "58e87073d787688eae8578e8d271cc4cf474475ef6af6c3187e6ebac724edbd0",
+          "bytes": 4736
+        }
+      }
+    },
+    {
+      "n": 9,
+      "title": "Lete River / Hold On!",
+      "character": "Terra + Sabin",
+      "motion": "A swerving raft, Sabin paddling and spray breaking around river rocks.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "09-lete-rapids-64.gif",
+          "sha256": "d4dcc5276f6b3905e963d4d6a667d1bf9ff8b36f6938d4e980a5a97d8c202bd9",
+          "bytes": 434776
+        },
+        "animated": {
+          "path": "09-lete-rapids.gif",
+          "sha256": "f850d444cb7595f01908910733fed11b7fa0bd8c50d7ae9b9ff4ced46d1f9689",
+          "bytes": 2772728
+        },
+        "native": {
+          "path": "09-lete-rapids-64.png",
+          "sha256": "edae6f838228f207adee544524ca810700cb3e70e31a768e4e43e7c35f47adff",
+          "bytes": 1928
+        },
+        "file": {
+          "path": "09-lete-rapids.png",
+          "sha256": "5292b9c490acf5f76084cf48a864a7b85435529aa95c0efd597382f302caf41c",
+          "bytes": 4775
+        }
+      }
+    },
+    {
+      "n": 10,
+      "title": "Narshe Cavern / Dance for Treasure",
+      "character": "Mog + Locke",
+      "motion": "Mog dances and hops; Locke approaches and a treasure chest bursts with sparks.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "10-moogle-treasure-64.gif",
+          "sha256": "59ab0289c91b00a09f4bb8f9f1387050ef04c61d713de69a43c5fa9d9e6e031b",
+          "bytes": 305689
+        },
+        "animated": {
+          "path": "10-moogle-treasure.gif",
+          "sha256": "4dc0a4b237cb34ba6155a88154772d74adbaf1160e4ed63689929618913ba5a1",
+          "bytes": 1207375
+        },
+        "native": {
+          "path": "10-moogle-treasure-64.png",
+          "sha256": "314f0aa0c7ba635b0c752d64ff8ecf42a8e091c387b8ab637c070f18b82b7b23",
+          "bytes": 1789
+        },
+        "file": {
+          "path": "10-moogle-treasure.png",
+          "sha256": "6f8e4e8b307756beb5605cf5062d553cbfccb8b9708caec8234406ae806d6ee3",
+          "bytes": 4535
+        }
+      }
+    },
+    {
+      "n": 11,
+      "title": "Opera House / A Rose for You",
+      "character": "Celes + Locke",
+      "motion": "Celes and Locke alternate singing, with musical notes rising from the active singer.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "11-opera-rose-64.gif",
+          "sha256": "a99f93464c6594bc6c8c768fde5543427854a94b2d34924f522f7577708742f9",
+          "bytes": 251395
+        },
+        "animated": {
+          "path": "11-opera-rose.gif",
+          "sha256": "ba24428bc1392eaf55461f97c1920954c88fc0daeb48ee98288e3ae8b0ae9617",
+          "bytes": 555674
+        },
+        "native": {
+          "path": "11-opera-rose-64.png",
+          "sha256": "04a3c54495c23c7c0a9aa5b8ea6da22596bba16b0b0d8a3680638439438fe1f5",
+          "bytes": 1812
+        },
+        "file": {
+          "path": "11-opera-rose.png",
+          "sha256": "007e441bf08bd001b294bdefcc1f6a730d5e5e4d953f8521c4e174b04f7e5058",
+          "bytes": 4479
+        }
+      }
+    },
+    {
+      "n": 12,
+      "title": "Phantom Forest / Interceptor!",
+      "character": "Shadow + Interceptor + ghost",
+      "motion": "Interceptor hangs back farther and takes a short step back before jumping toward the ghost.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "12-forest-chase-64.gif",
+          "sha256": "e7f741035de57d5cf08debf83fa13dd93f9da1cd578642167a1e688402c85392",
+          "bytes": 313262
+        },
+        "animated": {
+          "path": "12-forest-chase.gif",
+          "sha256": "8d58c0b223ed67539de9512309c3a5a64d032d700806a66a5c4d2f32ef887847",
+          "bytes": 1924135
+        },
+        "native": {
+          "path": "12-forest-chase-64.png",
+          "sha256": "bd3e2acf1390b821faa795de26abc4558bf7520bacb5329fbe54043142b3f5aa",
+          "bytes": 1824
+        },
+        "file": {
+          "path": "12-forest-chase.png",
+          "sha256": "62abf27c1196942eebb6088df8088613b345fed9c5a4f28dfe61cf673213ef72",
+          "bytes": 4731
+        }
+      }
+    },
+    {
+      "n": 13,
+      "title": "Sealed Gate / Esper Awakening",
+      "character": "Terra + Locke",
+      "motion": "Locke repeatedly jumps, throws up his arms and darts around while Terra transforms.",
+      "review_status": "change",
+      "files": {
+        "native_gif": {
+          "path": "13-esper-awakening-64.gif",
+          "sha256": "533514a1941e3ed1bc653d54f0800635ad868285d4b66e7bcf5e49c1369d2140",
+          "bytes": 267481
+        },
+        "animated": {
+          "path": "13-esper-awakening.gif",
+          "sha256": "17ab726988e70cae0d4c4fd7761a556ce6bf70adc8f75074f2ad8bc2d16a17e9",
+          "bytes": 1929689
+        },
+        "native": {
+          "path": "13-esper-awakening-64.png",
+          "sha256": "68f03d44ea3f79d0a353a0d3c4ef0200cd88a7fa8e68d271bc42a358467a0fc3",
+          "bytes": 2288
+        },
+        "file": {
+          "path": "13-esper-awakening.png",
+          "sha256": "53947cea703d9543fd72c36005a861be4722a634104e87331f6c6a278b46f596",
+          "bytes": 5450
+        }
+      }
+    },
+    {
+      "n": 14,
+      "title": "South Figaro / Rooftop Escape",
+      "character": "Locke + Celes",
+      "motion": "Two runners leap across scrolling rooftop gaps against a dusk skyline.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "14-rooftop-escape-64.gif",
+          "sha256": "731d84f19e9f34e436386575039ee1c84173d5866ab4b2522637d2b894800094",
+          "bytes": 360241
+        },
+        "animated": {
+          "path": "14-rooftop-escape.gif",
+          "sha256": "4c3e18a51b4de670845f3941559328c4e0cc23621c9fe3b7746539bcb3ab6b12",
+          "bytes": 2231884
+        },
+        "native": {
+          "path": "14-rooftop-escape-64.png",
+          "sha256": "ed16f27567a5b372c2073ba8449130270e803fc97c69e9e3fb7e9ded81afaa53",
+          "bytes": 2159
+        },
+        "file": {
+          "path": "14-rooftop-escape.png",
+          "sha256": "62b81d1f4f1c62dd93fcfdddd14b7c12e3a1f096c83de6594d517c84764b9964",
+          "bytes": 5078
+        }
+      }
+    },
+    {
+      "n": 15,
+      "title": "Ultros / Fire Dance",
+      "character": "Sabin vs Ultros",
+      "motion": "Sabin performs Fire Dance: circling flames build into a sweeping fire attack against Ultros.",
+      "review_status": "change",
+      "files": {
+        "native_gif": {
+          "path": "15-fire-dance-64.gif",
+          "sha256": "80e9fc2cf5a5055a463afbdf6c0716fb1103bd013c8dde226bad91da2bdd2c34",
+          "bytes": 246713
+        },
+        "animated": {
+          "path": "15-fire-dance.gif",
+          "sha256": "43dfd3ad4f812a7cc6e0b0187a0155fbb4c7dfbf36bbf734f1e703b2e03dd3f3",
+          "bytes": 1165264
+        },
+        "native": {
+          "path": "15-fire-dance-64.png",
+          "sha256": "acbb03ff7a335c09accb0b8bbefa8e3fed0ea1a1c9addef6149c9c46c69ec7e6",
+          "bytes": 2454
+        },
+        "file": {
+          "path": "15-fire-dance.png",
+          "sha256": "6f6f0b27d7cf4c65352709c3f971cd7650157d90af4844dea811feb238bb01be",
+          "bytes": 5551
+        }
+      }
+    },
+    {
+      "n": 16,
+      "title": "Figaro Desert / Chocobo Dash",
+      "character": "Terra + Locke + Chocobo",
+      "motion": "Terra rides a running Chocobo while Locke keeps pace through rolling dunes.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "16-chocobo-dash-64.gif",
+          "sha256": "a1bb1e3256bb1135bc263d1c78d213ec8bfaf02bcae58b78a33e6b1d8b209940",
+          "bytes": 393210
+        },
+        "animated": {
+          "path": "16-chocobo-dash.gif",
+          "sha256": "48fc5482ca69c704c9ba81af0253ce7afadb9e014b7747e24e29b6322f275605",
+          "bytes": 2155244
+        },
+        "native": {
+          "path": "16-chocobo-dash-64.png",
+          "sha256": "3d8ee5be835204d696f417a76821f2f0e79d53699b21aad7cc8754fa55ac13e5",
+          "bytes": 1979
+        },
+        "file": {
+          "path": "16-chocobo-dash.png",
+          "sha256": "7e0172e7d327488469c02c9f2f94649aa1cd681bbf408aea7c7cf974e60773b6",
+          "bytes": 4737
+        }
+      }
+    },
+    {
+      "n": 17,
+      "title": "Ultros / Fire on the River",
+      "character": "Terra vs Ultros",
+      "motion": "Terra charges and casts Fire; Ultros recoils, then sends an ink-dark counterattack.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "17-ultros-64.gif",
+          "sha256": "91a12169a345cae8f5a16dbe22b2a46477fbdd3d71bccbbe648bc09ea0ee842d",
+          "bytes": 304498
+        },
+        "animated": {
+          "path": "17-ultros.gif",
+          "sha256": "acc97ef2370ec911a7459af476080f48cebe5bf62b9713f0e3d059746576a013",
+          "bytes": 1627975
+        },
+        "native": {
+          "path": "17-ultros-64.png",
+          "sha256": "e0a3609e3ffbeb6e2c5498b237e230c072199d0c6daf22a450253a95fcdcfbfe",
+          "bytes": 2125
+        },
+        "file": {
+          "path": "17-ultros.png",
+          "sha256": "d4b4e7e45f41d23d201fb99a661e876e0eed5e0d23277f84f62b70d6ed75d6b2",
+          "bytes": 5063
+        }
+      }
+    },
+    {
+      "n": 18,
+      "title": "Whelk / Shell Shock",
+      "character": "Terra vs Whelk",
+      "motion": "Whelk is reassembled with its head, foot and shell connected as a single sprite.",
+      "review_status": "change",
+      "files": {
+        "native_gif": {
+          "path": "18-whelk-64.gif",
+          "sha256": "8244f78362ba95b7e719b357cd958388bb5e7c201bca2da380fbb9b80bdc3926",
+          "bytes": 134844
+        },
+        "animated": {
+          "path": "18-whelk.gif",
+          "sha256": "37c8ffcf84b02a29540abb1a3f540bf212df0d86944b0482c49d8f147b18e275",
+          "bytes": 386547
+        },
+        "native": {
+          "path": "18-whelk-64.png",
+          "sha256": "eb9d97b547faa0a2f7de0146cc6cf03f9b9f35c2383fc75387a1042bbcecc81f",
+          "bytes": 2305
+        },
+        "file": {
+          "path": "18-whelk.png",
+          "sha256": "643af42ba93d10a511d74f875acb3b841063372a32e772f3bea036b7d1ffc851",
+          "bytes": 5300
+        }
+      }
+    },
+    {
+      "n": 19,
+      "title": "Magitek Armor / Runic & Ice",
+      "character": "Celes vs Magitek Armor",
+      "motion": "Celes raises her Runic blade, absorbs incoming magic and answers with ice.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "19-magitek-armor-64.gif",
+          "sha256": "11c6673b220cf807f3fbbc19a23516c117663df0b4b4c7c70d545e1990dca481",
+          "bytes": 176802
+        },
+        "animated": {
+          "path": "19-magitek-armor.gif",
+          "sha256": "e24ed91c2b12b21c1ce3bcf2517b88d5c742d10c329a52be3f1f73a1be71c8a1",
+          "bytes": 701092
+        },
+        "native": {
+          "path": "19-magitek-armor-64.png",
+          "sha256": "5e7ae3f326e104b0a6d3db5fdd289a71c1a48c4450fc0afef524e1f31f48316a",
+          "bytes": 2834
+        },
+        "file": {
+          "path": "19-magitek-armor.png",
+          "sha256": "a64f0e92251761a0df80405a81e35072d1edd70389626390b9cc1a4b572a8dc1",
+          "bytes": 6510
+        }
+      }
+    },
+    {
+      "n": 22,
+      "title": "Forest Swarm / Dance & Cure",
+      "character": "Mog vs flying enemies",
+      "motion": "Mog dances through a leaf attack, then green healing sparks rise around him.",
+      "review_status": "keep",
+      "files": {
+        "native_gif": {
+          "path": "22-forest-swarm-64.gif",
+          "sha256": "d44225afc70f12b6ffca8d6590ad935dce58ee8baadee62f653cdb8f9e542d55",
+          "bytes": 344282
+        },
+        "animated": {
+          "path": "22-forest-swarm.gif",
+          "sha256": "6731a95d0e2b8967cdeaa3900bb093d26cf68a5eac571e9ef2f133b262e0294a",
+          "bytes": 1650764
+        },
+        "native": {
+          "path": "22-forest-swarm-64.png",
+          "sha256": "79c76e5991dca1a0deb67e844f066981527239a54f6b9261b3df5d67702cf82a",
+          "bytes": 1930
+        },
+        "file": {
+          "path": "22-forest-swarm.png",
+          "sha256": "223149f71f8ef232cf77af06dd61afc546c5fa7fe7bd2020ffd3d82d263e0da5",
+          "bytes": 4845
+        }
+      }
+    }
+  ]
+}

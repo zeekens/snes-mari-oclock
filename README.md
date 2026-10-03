@@ -34,6 +34,14 @@ All eight faces, rendered at 25 fps. Each 12-second loop includes a minute chang
 
 Crisp nearest-neighbour enlargement; legacy background smoothing is disabled. These GIFs are previews, not installable packs. See [artwork provenance](ARTWORK.md).
 
+## Final Fantasy VI animation collection
+
+[Download the 19-face animation package](collections/ffvi-1.0.0/ffvi-clock-animations-1.0.0.zip) · [Browse all FFVI previews](collections/ffvi-1.0.0/README.md)
+
+Native 64×64 and enlarged 512×512 GIFs, PNG stills, an offline HTML gallery, and a SHA-256 manifest. Includes 14 Keep faces and the latest revisions of five faces still marked Change; discarded faces are excluded.
+
+These are preview assets with a fixed 12:34 display, **not installable SNPK packs**. See the [FFVI artwork credits](collections/ffvi-1.0.0/ARTWORK.md).
+
 ## Load from GitHub
 
 Use an immutable, full 40-character commit SHA as the library base:
