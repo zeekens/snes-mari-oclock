@@ -1,0 +1,30 @@
+{
+  "pack": "2",
+  "ids": [
+    "metroid-04",
+    "allstars-01",
+    "dkc2-01",
+    "dkc2-02",
+    "streetfighter-01",
+    "mariokart-04",
+    "ffvi-03",
+    "ffvi-07",
+    "ffvi-10",
+    "ffvi-15",
+    "ffvi-22"
+  ],
+  "faces": 11,
+  "asset_bytes": 822296,
+  "compile_exit_code": 0,
+  "linked_flash_bytes": 1822047,
+  "slot_bytes": 1835008,
+  "static_ram_bytes": 71520,
+  "ota_image_bytes": 1822160,
+  "ota_sha256": "819dc7cac33b2f11ade7f4614a79ce059e42d59fcc587c4b5fa0df471ab67266",
+  "free_bytes": 12848,
+  "fits": true,
+  "esphome_version": "2026.8.2",
+  "credentials": "build-only placeholders",
+  "firmware_binary_included": false,
+  "physical_device_playback_tested": false
+}

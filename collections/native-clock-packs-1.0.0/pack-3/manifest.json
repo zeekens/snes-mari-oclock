@@ -1,0 +1,285 @@
+{
+  "name": "Native clock pack 3",
+  "version": "1.0.0",
+  "format": "SNTL",
+  "format_version": 1,
+  "compatible_with_snpk_v1_loader": false,
+  "native_size": [
+    64,
+    64
+  ],
+  "fps": 25,
+  "asset_bytes": 819556,
+  "items": [
+    {
+      "id": "zelda-03",
+      "title": "Fairy Fountain / Wings over Water",
+      "game": "The Legend of Zelda: A Link to the Past",
+      "tile_size": 4,
+      "palette_colors": 16,
+      "tile_count": 2183,
+      "frames": 300,
+      "bytes": 71341,
+      "duration_ms": 12000,
+      "sha256": "e7b745aa5bf37458fdee16d0bda93600e9a2683669b0c7d28d7775f96337b2f8",
+      "file": "packs/zelda-03.sntl",
+      "preview": {
+        "file": "previews/zelda-03.gif",
+        "bytes": 385025,
+        "sha256": "16d075c44d30e4355d285b462b0545258bedb8f9f605d32de31c3f9b5b11d0eb"
+      }
+    },
+    {
+      "id": "zelda-04",
+      "title": "Sanctuary / Zelda’s Escort",
+      "game": "The Legend of Zelda: A Link to the Past",
+      "tile_size": 4,
+      "palette_colors": 26,
+      "tile_count": 1300,
+      "frames": 300,
+      "bytes": 37740,
+      "duration_ms": 12000,
+      "sha256": "493bdca4c4b4c0303e1f4dd9ed577a5e459d3e668edce86d1817e6c3c30c80d3",
+      "file": "packs/zelda-04.sntl",
+      "preview": {
+        "file": "previews/zelda-04.gif",
+        "bytes": 204216,
+        "sha256": "a06d7599106428461c9e38c7e9f63d8ec97e046c7262fd298acf7f3217adef8f"
+      }
+    },
+    {
+      "id": "zelda-05",
+      "title": "Pyramid Chamber / Ganon’s Fire Ring",
+      "game": "The Legend of Zelda: A Link to the Past",
+      "tile_size": 4,
+      "palette_colors": 17,
+      "tile_count": 1163,
+      "frames": 300,
+      "bytes": 46950,
+      "duration_ms": 12000,
+      "sha256": "ad4319bf010a90f55a75c4db0c5e650b9c359a8237302f209297ee3abeec2fe7",
+      "file": "packs/zelda-05.sntl",
+      "preview": {
+        "file": "previews/zelda-05.gif",
+        "bytes": 406635,
+        "sha256": "d76b57ca1dfe3802cd7de0123fd26f9f04cd76fb1ccd593642375943f476f284"
+      }
+    },
+    {
+      "id": "metroid-01",
+      "title": "Crateria / Gunship Arrival",
+      "game": "Super Metroid",
+      "tile_size": 4,
+      "palette_colors": 24,
+      "tile_count": 874,
+      "frames": 300,
+      "bytes": 35644,
+      "duration_ms": 12000,
+      "sha256": "4d4fdeaac7ebdc0ee74ad0e5c9824aa41234ade0e84eb628d62392cfbd808ba2",
+      "file": "packs/metroid-01.sntl",
+      "preview": {
+        "file": "previews/metroid-01.gif",
+        "bytes": 363998,
+        "sha256": "64ac9a14d16ef1a722f35ded2212151b167d69f6cd94e65ee3a88ddf2c7a6f18"
+      }
+    },
+    {
+      "id": "yoshi-03",
+      "title": "Kamek’s Flight / Midnight Magic",
+      "game": "Super Mario World 2: Yoshi’s Island",
+      "tile_size": 4,
+      "palette_colors": 13,
+      "tile_count": 1750,
+      "frames": 300,
+      "bytes": 56324,
+      "duration_ms": 12000,
+      "sha256": "154130913417a5378f23d0a15dc6fec10296378d00b31570a04c7fc319bec873",
+      "file": "packs/yoshi-03.sntl",
+      "preview": {
+        "file": "previews/yoshi-03.gif",
+        "bytes": 319978,
+        "sha256": "b3f4471ca0f37da5c150160bfed7a78d26b1c3dae967e8735da3ba7ecc68f249"
+      }
+    },
+    {
+      "id": "allstars-03",
+      "title": "Bowser’s Keep / Fire and Falling Bricks",
+      "game": "Super Mario All-Stars",
+      "tile_size": 4,
+      "palette_colors": 22,
+      "tile_count": 516,
+      "frames": 300,
+      "bytes": 26065,
+      "duration_ms": 12000,
+      "sha256": "0cde98ddd24eb7e60f6bdd19e510d8b1598140f4758049148ea9cd3272d835b9",
+      "file": "packs/allstars-03.sntl",
+      "preview": {
+        "file": "previews/allstars-03.gif",
+        "bytes": 321123,
+        "sha256": "cd59c3f01e83c87c0eded362e4b8754c1a4c187ba867e4bef4c9db8911501bff"
+      }
+    },
+    {
+      "id": "dkc2-03",
+      "title": "Gloomy Gulch / Dixie’s Lantern",
+      "game": "Donkey Kong Country 2: Diddy’s Kong Quest",
+      "tile_size": 4,
+      "palette_colors": 24,
+      "tile_count": 2984,
+      "frames": 300,
+      "bytes": 77450,
+      "duration_ms": 12000,
+      "sha256": "ef97a905e51ae0897c2c00602a00d5ed18188fffb6f5b101f44874b91805fb62",
+      "file": "packs/dkc2-03.sntl",
+      "preview": {
+        "file": "previews/dkc2-03.gif",
+        "bytes": 279177,
+        "sha256": "76ba3a3962f2215eaf4590d21f74165322298067a8bc67bf070d2fa22d778da1"
+      }
+    },
+    {
+      "id": "ffvi-02",
+      "title": "Figaro / Desert Citadel",
+      "game": "Final Fantasy VI",
+      "tile_size": 8,
+      "palette_colors": 30,
+      "tile_count": 65,
+      "frames": 300,
+      "bytes": 4415,
+      "duration_ms": 12000,
+      "sha256": "4109e2a732fdbdc2685b1d75035627709f0afac2a9e73b71931da8eac20d8974",
+      "file": "packs/ffvi-02.sntl",
+      "preview": {
+        "file": "previews/ffvi-02.gif",
+        "bytes": 71128,
+        "sha256": "7dd02b68a57297a3f2cb4bebf7a444352c447c814e72a990d71db12ae4c4b0b5"
+      }
+    },
+    {
+      "id": "ffvi-06",
+      "title": "Blackjack / Above the Clouds",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 51,
+      "tile_count": 2240,
+      "frames": 300,
+      "bytes": 63211,
+      "duration_ms": 12000,
+      "sha256": "6c7593c50a45689ed7e34f62bdb8736d424a2a2d21e60586257d75e515b94360",
+      "file": "packs/ffvi-06.sntl",
+      "preview": {
+        "file": "previews/ffvi-06.gif",
+        "bytes": 449942,
+        "sha256": "6be33f9e4c80264496000288f2da6d28455b96e1f16d5b7763b47bc67e1f586d"
+      }
+    },
+    {
+      "id": "ffvi-08",
+      "title": "Magitek / Esper Chamber",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 38,
+      "tile_count": 897,
+      "frames": 300,
+      "bytes": 25167,
+      "duration_ms": 12000,
+      "sha256": "5d723e65938f585e251aed346b0cbd65aa739be774fd6f6aeca73b5b28ad7790",
+      "file": "packs/ffvi-08.sntl",
+      "preview": {
+        "file": "previews/ffvi-08.gif",
+        "bytes": 157918,
+        "sha256": "70f2ee406ebf891af27a32ce659113b3e753045c447c3f11c0d21fd33f5eb4f6"
+      }
+    },
+    {
+      "id": "ffvi-12",
+      "title": "Phantom Forest / Interceptor!",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 21,
+      "tile_count": 3070,
+      "frames": 300,
+      "bytes": 99632,
+      "duration_ms": 12000,
+      "sha256": "17a6f173d0ad9c3231c7a0475764cfcf1bcbc7ba4585d1bdafd8441f76c89f81",
+      "file": "packs/ffvi-12.sntl",
+      "preview": {
+        "file": "previews/ffvi-12.gif",
+        "bytes": 313262,
+        "sha256": "e7f741035de57d5cf08debf83fa13dd93f9da1cd578642167a1e688402c85392"
+      }
+    },
+    {
+      "id": "ffvi-14",
+      "title": "South Figaro / Rooftop Escape",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 38,
+      "tile_count": 3844,
+      "frames": 300,
+      "bytes": 111782,
+      "duration_ms": 12000,
+      "sha256": "58df29a39cd7b840b0fb714ab7c089eb50eea427825b7635dbacae94442e18fe",
+      "file": "packs/ffvi-14.sntl",
+      "preview": {
+        "file": "previews/ffvi-14.gif",
+        "bytes": 360241,
+        "sha256": "731d84f19e9f34e436386575039ee1c84173d5866ab4b2522637d2b894800094"
+      }
+    },
+    {
+      "id": "ffvi-16",
+      "title": "Figaro Desert / Chocobo Dash",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 36,
+      "tile_count": 2613,
+      "frames": 300,
+      "bytes": 82890,
+      "duration_ms": 12000,
+      "sha256": "9b03cafd407312826933ba32b452e8328fba1a40ea44519f07dbe6d35ffd31f5",
+      "file": "packs/ffvi-16.sntl",
+      "preview": {
+        "file": "previews/ffvi-16.gif",
+        "bytes": 393210,
+        "sha256": "a1bb1e3256bb1135bc263d1c78d213ec8bfaf02bcae58b78a33e6b1d8b209940"
+      }
+    },
+    {
+      "id": "ffvi-17",
+      "title": "Ultros / Fire on the River",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 44,
+      "tile_count": 1705,
+      "frames": 300,
+      "bytes": 53937,
+      "duration_ms": 12000,
+      "sha256": "8ac457c1813a15e7fce3542cd9884a91a478df96165587d03b7b599ff4b9875b",
+      "file": "packs/ffvi-17.sntl",
+      "preview": {
+        "file": "previews/ffvi-17.gif",
+        "bytes": 304498,
+        "sha256": "91a12169a345cae8f5a16dbe22b2a46477fbdd3d71bccbbe648bc09ea0ee842d"
+      }
+    },
+    {
+      "id": "ffvi-19",
+      "title": "Magitek Armor / Runic & Ice",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 52,
+      "tile_count": 926,
+      "frames": 300,
+      "bytes": 27008,
+      "duration_ms": 12000,
+      "sha256": "711bb37edf17225b8622078acfc3e26e4ea6fcb4440f58c173a90edc51c78c9a",
+      "file": "packs/ffvi-19.sntl",
+      "preview": {
+        "file": "previews/ffvi-19.gif",
+        "bytes": 176802,
+        "sha256": "11c6673b220cf807f3fbbc19a23516c117663df0b4b4c7c70d545e1990dca481"
+      }
+    }
+  ]
+}

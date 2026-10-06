@@ -1,0 +1,347 @@
+# Compile-only until docs/HARDWARE.md checks are complete. Display pin map measured by user; panel settings still require validation.
+substitutions:
+  device_name: snes-clock
+  wifi_ssid: SNES_CLOCK_BUILD_ONLY
+  wifi_password: build-only-not-a-real-password
+  api_key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  ota_password: build-only-do-not-deploy
+
+esphome:
+  name: ${device_name}
+  friendly_name: SNES Clock
+  project:
+    name: snes.clock
+    version: packs-1.1.0
+  min_version: 2026.8.2
+  on_boot:
+    priority: -100
+    then:
+      - lambda: id(pack_loader).set_clock(&id(scene));
+      - script.execute:
+          id: apply_selected_scene
+          choice: !lambda return id(scene_choice).current_option().str();
+      - hub75.set_brightness:
+          id: matrix
+          brightness: !lambda return uint8_t(id(brightness).state * 255.0f / 100.0f);
+  includes:
+    - include/reference_sprites.h
+    - include/luigi_sprites.h
+    - include/scene_pack.h
+    - include/scene_catalog.h
+    - include/clock_core.h
+    - <clock_core.h> # declare custom global type before ESPHome static storage
+
+external_components:
+  - source: components
+    components: [scene_packs]
+
+scene_packs:
+  id: pack_loader
+
+esp32:
+  board: esp32dev
+  flash_size: 4MB # confirmed by serial identification and two full reads
+  framework:
+    type: esp-idf
+
+logger:
+  level: INFO
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
+  reboot_timeout: 0s
+  on_connect:
+    then:
+      - if:
+          condition:
+            lambda: return snes::catalog::find(id(scene_choice).current_option().str()) != nullptr;
+          then:
+            - script.execute:
+                id: apply_selected_scene
+                choice: !lambda return id(scene_choice).current_option().str();
+
+api:
+  encryption:
+    key: ${api_key}
+  reboot_timeout: 0s
+  actions:
+    - action: use_builtin_scene
+      variables:
+        scene_name: string
+      then:
+        - if:
+            condition:
+              lambda: return id(pack_loader).select_builtin(scene_name);
+            then:
+              - api.respond:
+                  success: true
+            else:
+              - api.respond:
+                  success: false
+                  error_message: Invalid builtin scene
+    - action: load_scene_pack
+      variables:
+        pack_url: string
+        expected_hash: string
+      then:
+        - if:
+            condition:
+              lambda: return id(pack_loader).request(pack_url, expected_hash);
+            then:
+              - api.respond:
+                  success: true
+            else:
+              - api.respond:
+                  success: false
+                  error_message: !lambda return id(pack_loader).error();
+    - action: cancel_scene_pack
+      then:
+        - lambda: id(pack_loader).cancel();
+    - action: show_message
+      variables:
+        message_text: string
+        mode: string
+        duration_s: int
+        priority: int
+        message_id: string
+      then:
+        - lambda: |-
+            id(scene).queue.submit(std::string(message_text.c_str()), std::string(mode.c_str()), duration_s, priority, std::string(message_id.c_str()), millis());
+        - if:
+            condition:
+              lambda: return id(scene).queue.last_error.empty();
+            then:
+              - api.respond:
+                  success: true
+            else:
+              - api.respond:
+                  success: false
+                  error_message: !lambda return id(scene).queue.last_error;
+    - action: clear_message
+      variables:
+        message_id: string
+      then:
+        - lambda: id(scene).queue.clear(std::string(message_id.c_str()), millis());
+    - action: clear_all_messages
+      then:
+        - lambda: id(scene).queue.clear_all();
+
+ota:
+  - platform: esphome
+    password: ${ota_password}
+    on_begin:
+      then:
+        - lambda: id(pack_loader).cancel();
+
+time:
+  - platform: sntp
+    id: clock_time
+    timezone: Europe/Stockholm
+
+globals:
+  - id: render_duration_us
+    type: uint32_t
+    restore_value: no
+    initial_value: "0"
+  - id: scene
+    type: snes::Clock
+    restore_value: no
+
+script:
+  - id: apply_selected_scene
+    mode: restart
+    parameters:
+      choice: string
+    then:
+      - lambda: id(pack_loader).cancel();
+      - if:
+          condition:
+            lambda: return snes::catalog::find(choice) != nullptr;
+          then:
+            - wait_until:
+                condition:
+                  and:
+                    - wifi.connected:
+                    - time.has_time:
+                timeout: 60s
+            - lambda: |-
+                const auto *entry = snes::catalog::find(choice);
+                if (entry != nullptr) {
+                  id(pack_loader).request(std::string(snes::catalog::BASE_URL) + "/" + entry->file, entry->hash);
+                }
+          else:
+            - lambda: |-
+                id(pack_loader).select_builtin(choice);
+                id(scene).set_scene(choice);
+
+select:
+  - platform: template
+    name: Scene
+    id: scene_choice
+    optimistic: true
+    restore_value: true
+    initial_option: Mario
+    options:
+      - Mario
+      - Luigi Forest
+      - Cape Luigi Forest
+      - Ghost House
+      - Tide Pool
+      - Lava Fortress
+      - Star Road
+      - Bonus Room
+    on_value:
+      - script.execute:
+          id: apply_selected_scene
+          choice: !lambda return x;
+
+switch:
+  - platform: template
+    name: Smooth Scrolling
+    id: smooth_scrolling
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+  - platform: template
+    name: Display
+    id: display_enabled
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+  - platform: template
+    name: Animation
+    id: animation_enabled
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+
+number:
+  - platform: template
+    name: Brightness
+    id: brightness
+    min_value: 0
+    max_value: 100
+    step: 1
+    unit_of_measurement: '%'
+    optimistic: true
+    restore_value: true
+    initial_value: 5
+    set_action:
+      - hub75.set_brightness:
+          id: matrix
+          brightness: !lambda return uint8_t(x * 255.0f / 100.0f);
+
+binary_sensor:
+  - platform: status
+    name: Status
+
+sensor:
+  - platform: template
+    name: Render Duration
+    lambda: return id(render_duration_us);
+    unit_of_measurement: us
+    entity_category: diagnostic
+    update_interval: 1s
+  - platform: template
+    name: Pack Bytes
+    lambda: return id(pack_loader).active_bytes();
+    update_interval: 1s
+  - platform: template
+    name: Largest Free Heap Block
+    lambda: return heap_caps_get_largest_free_block(MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+    unit_of_measurement: B
+    entity_category: diagnostic
+    update_interval: 5s
+  - platform: template
+    name: Pack Worker Stack Free
+    lambda: return id(pack_loader).worker_stack_free();
+    entity_category: diagnostic
+    update_interval: 5s
+  - platform: uptime
+    name: Uptime
+    update_interval: 60s
+  - platform: wifi_signal
+    name: WiFi Signal
+    update_interval: 60s
+  - platform: template
+    name: Message Count
+    lambda: return id(scene).queue.size();
+    update_interval: 1s
+  - platform: template
+    name: Free Heap
+    unit_of_measurement: B
+    entity_category: diagnostic
+    lambda: return heap_caps_get_free_size(MALLOC_CAP_8BIT);
+    update_interval: 30s
+  - platform: template
+    name: Minimum Free Heap
+    unit_of_measurement: B
+    entity_category: diagnostic
+    lambda: return heap_caps_get_minimum_free_size(MALLOC_CAP_8BIT);
+    update_interval: 30s
+
+text_sensor:
+  - platform: template
+    name: Active Scene
+    lambda: return id(pack_loader).active_id();
+    update_interval: 1s
+  - platform: template
+    name: Pack Status
+    lambda: return id(pack_loader).state();
+    update_interval: 1s
+  - platform: template
+    name: Pack Error
+    lambda: return id(pack_loader).error();
+    update_interval: 1s
+  - platform: template
+    name: Last Completed Message
+    lambda: return id(scene).queue.last_completed;
+    update_interval: 1s
+  - platform: template
+    name: Last Message Error
+    lambda: return id(scene).queue.last_error;
+    update_interval: 1s
+
+display:
+  - platform: hub75
+    id: matrix
+    panel_width: 64
+    panel_height: 64
+    rotation: 180
+    brightness: 12
+    bit_depth: 6
+    double_buffer: false
+    # The renderer overwrites every pixel; clearing first exposes a blank frame.
+    auto_clear_enabled: false
+    update_interval: 40ms
+    clock_speed: 8MHZ
+    clock_phase: false
+    shift_driver: GENERIC
+    # User continuity map, 2026-09-26: docs/snes-continuity-top-view.excalidraw.
+    r1_pin: GPIO25
+    g1_pin: GPIO26
+    b1_pin: GPIO27
+    r2_pin: GPIO14
+    g2_pin: GPIO12
+    b2_pin: GPIO13
+    a_pin: GPIO23
+    b_pin: GPIO19
+    c_pin: GPIO5
+    d_pin: GPIO17
+    e_pin: GPIO32
+    lat_pin: GPIO4
+    oe_pin: GPIO15
+    clk_pin: GPIO16
+    lambda: |-
+      const uint32_t frame_started = micros();
+      auto now = id(clock_time).now();
+      auto &clock = id(scene);
+      clock.enabled = id(display_enabled).state;
+      clock.animated = id(animation_enabled).state;
+      clock.smooth_background = id(smooth_scrolling).state;
+      auto &pixels = clock.render(millis(), now.hour, now.minute, now.is_valid());
+      for (int y = 0; y < 64; y++) {
+        for (int x = 0; x < 64; x++) {
+          uint32_t c = pixels[y * 64 + x];
+          it.draw_pixel_at(x, y, Color((c >> 16) & 255, (c >> 8) & 255, c & 255));
+        }
+      }
+      id(render_duration_us) = micros() - frame_started;

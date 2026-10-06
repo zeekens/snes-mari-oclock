@@ -1,0 +1,285 @@
+{
+  "name": "Native clock pack 1",
+  "version": "1.0.0",
+  "format": "SNTL",
+  "format_version": 1,
+  "compatible_with_snpk_v1_loader": false,
+  "native_size": [
+    64,
+    64
+  ],
+  "fps": 25,
+  "asset_bytes": 757427,
+  "items": [
+    {
+      "id": "zelda-01",
+      "title": "Light World / Link’s House Overworld",
+      "game": "The Legend of Zelda: A Link to the Past",
+      "tile_size": 4,
+      "palette_colors": 43,
+      "tile_count": 661,
+      "frames": 300,
+      "bytes": 17942,
+      "duration_ms": 12000,
+      "sha256": "84ee326e51d01cd4b84a0c57c8bd2bf88a910c4d8f152feba741988ebec17faf",
+      "file": "packs/zelda-01.sntl",
+      "preview": {
+        "file": "previews/zelda-01.gif",
+        "bytes": 79345,
+        "sha256": "ad9c201e6c37e91148c072dfca5ffc865be979b033445b96626f1f893ee05260"
+      }
+    },
+    {
+      "id": "metroid-05",
+      "title": "Escape Shaft / Samus under Fire",
+      "game": "Super Metroid",
+      "tile_size": 4,
+      "palette_colors": 23,
+      "tile_count": 1291,
+      "frames": 300,
+      "bytes": 36482,
+      "duration_ms": 12000,
+      "sha256": "99b18c5eb56853a3810840d5de814a579561d88a0ae2e3f54a52a72cc6cdbb59",
+      "file": "packs/metroid-05.sntl",
+      "preview": {
+        "file": "previews/metroid-05.gif",
+        "bytes": 155749,
+        "sha256": "88e3f8e9eb57e6ee3c8ec10956052cf313242b7805a674549e059ee1715788ba"
+      }
+    },
+    {
+      "id": "yoshi-04",
+      "title": "Egg Garden / Yoshi Meets the Parade",
+      "game": "Super Mario World 2: Yoshi’s Island",
+      "tile_size": 4,
+      "palette_colors": 31,
+      "tile_count": 1293,
+      "frames": 300,
+      "bytes": 45363,
+      "duration_ms": 12000,
+      "sha256": "0930837ad32c441521f85c6baa24e29956624ef2165436253c6b18deef76ad23",
+      "file": "packs/yoshi-04.sntl",
+      "preview": {
+        "file": "previews/yoshi-04.gif",
+        "bytes": 257769,
+        "sha256": "5b7c5729e6ac215b3dbd8c03553105fa9449fc0cd2bd38afd0a59641472d74bf"
+      }
+    },
+    {
+      "id": "megaman-01",
+      "title": "Central Highway / Zero’s Charge",
+      "game": "Mega Man X",
+      "tile_size": 4,
+      "palette_colors": 19,
+      "tile_count": 1191,
+      "frames": 300,
+      "bytes": 31612,
+      "duration_ms": 12000,
+      "sha256": "7019fb7fcdf79c90d15e1ee46dc1900c9656820c32cf1ba4cb122cefdb14ac88",
+      "file": "packs/megaman-01.sntl",
+      "preview": {
+        "file": "previews/megaman-01.gif",
+        "bytes": 296931,
+        "sha256": "74715458293f12aadeedb86f5caf17545f512181ec4d25ccb9b0f88deca93016"
+      }
+    },
+    {
+      "id": "megaman-03",
+      "title": "Sting Chameleon Forest / X’s Buster",
+      "game": "Mega Man X",
+      "tile_size": 4,
+      "palette_colors": 51,
+      "tile_count": 2601,
+      "frames": 300,
+      "bytes": 67790,
+      "duration_ms": 12000,
+      "sha256": "6f85aaade2336211186d5a32d5cf0a5dfb988107dd3e03db0f4104a52d359414",
+      "file": "packs/megaman-03.sntl",
+      "preview": {
+        "file": "previews/megaman-03.gif",
+        "bytes": 229889,
+        "sha256": "5bb49b2365ed6467dcdfc91fbfa442641e4d1e1bba1d41d1bcbe7544eb32a589"
+      }
+    },
+    {
+      "id": "castlevania-03",
+      "title": "Castle Approach / Simon’s Whip",
+      "game": "Super Castlevania IV",
+      "tile_size": 4,
+      "palette_colors": 22,
+      "tile_count": 1037,
+      "frames": 300,
+      "bytes": 27905,
+      "duration_ms": 12000,
+      "sha256": "1afce740393be6d218a46b32cdd41d79393442d494e4af3e4237fedce6d4b4a2",
+      "file": "packs/castlevania-03.sntl",
+      "preview": {
+        "file": "previews/castlevania-03.gif",
+        "bytes": 100587,
+        "sha256": "fca941e97efee32d5e5954bb788977c57e6c62bbafe9c9072efb5d73797014c4"
+      }
+    },
+    {
+      "id": "streetfighter-02",
+      "title": "Brazil / Ryu versus Blanka",
+      "game": "Street Fighter II Turbo: Hyper Fighting",
+      "tile_size": 4,
+      "palette_colors": 84,
+      "tile_count": 1782,
+      "frames": 300,
+      "bytes": 47532,
+      "duration_ms": 12000,
+      "sha256": "8835b24de954a051afc365e2b84b127ea3502ed165bedce9a3d85507a3186bfd",
+      "file": "packs/streetfighter-02.sntl",
+      "preview": {
+        "file": "previews/streetfighter-02.gif",
+        "bytes": 268436,
+        "sha256": "875b30337ef7e31d24eba0bbdcd1643d04ad45967c998ff4a26a6f3a4ad7bd76"
+      }
+    },
+    {
+      "id": "mariokart-01",
+      "title": "Mario Circuit / Mario’s Solo Lap",
+      "game": "Super Mario Kart",
+      "tile_size": 4,
+      "palette_colors": 18,
+      "tile_count": 1155,
+      "frames": 300,
+      "bytes": 51063,
+      "duration_ms": 12000,
+      "sha256": "af206671b4b211f931aa18c928ec3c794ddc8b47729cbb4284952ad9a2e4eb02",
+      "file": "packs/mariokart-01.sntl",
+      "preview": {
+        "file": "previews/mariokart-01.gif",
+        "bytes": 320315,
+        "sha256": "d542962e17ccf4b5c5effa95661fe2e0d4965b0dfda65ae234d363ec175c0d65"
+      }
+    },
+    {
+      "id": "mariokart-05",
+      "title": "Mario Circuit 1 / Whole-Course Minimap",
+      "game": "Super Mario Kart",
+      "tile_size": 4,
+      "palette_colors": 32,
+      "tile_count": 1790,
+      "frames": 300,
+      "bytes": 46356,
+      "duration_ms": 12000,
+      "sha256": "c64fbb9e6939c8510653b55f93b51b70ad7e5d7b9245fc7a22f47ce63dcc3519",
+      "file": "packs/mariokart-05.sntl",
+      "preview": {
+        "file": "previews/mariokart-05.gif",
+        "bytes": 307441,
+        "sha256": "3062e852c8f7af5ea0116ed0c7d5aa5bbc6a074a6b559708fe6577f626fb26fb"
+      }
+    },
+    {
+      "id": "ffvi-01",
+      "title": "Narshe / Snowfall",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 34,
+      "tile_count": 2835,
+      "frames": 300,
+      "bytes": 74933,
+      "duration_ms": 12000,
+      "sha256": "70700e0d3f4f86cbe031b598b2e5e8d54c63919d1dd980deca37fe8e76d54c34",
+      "file": "packs/ffvi-01.sntl",
+      "preview": {
+        "file": "previews/ffvi-01.gif",
+        "bytes": 412377,
+        "sha256": "5a8f6f6074e85ad5975273c473ccf1be8cb86e8da257d4779bef5296196cba16"
+      }
+    },
+    {
+      "id": "ffvi-05",
+      "title": "Phantom Train / Last Departure",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 31,
+      "tile_count": 1820,
+      "frames": 300,
+      "bytes": 62609,
+      "duration_ms": 12000,
+      "sha256": "c9e4e81bbde7383c844347f8dab1000950a338e031b820e3efe6e64971e852aa",
+      "file": "packs/ffvi-05.sntl",
+      "preview": {
+        "file": "previews/ffvi-05.gif",
+        "bytes": 454449,
+        "sha256": "d8351a43e56bf4f6a9c1795be0a43d02ddced301787d5110d96316447e9cf9f2"
+      }
+    },
+    {
+      "id": "ffvi-09",
+      "title": "Lete River / Hold On!",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 34,
+      "tile_count": 2870,
+      "frames": 300,
+      "bytes": 83319,
+      "duration_ms": 12000,
+      "sha256": "e6aff03e364b02db694fd8fe56cf695488909050a85800d3fd5affe26d38b73b",
+      "file": "packs/ffvi-09.sntl",
+      "preview": {
+        "file": "previews/ffvi-09.gif",
+        "bytes": 434776,
+        "sha256": "d4dcc5276f6b3905e963d4d6a667d1bf9ff8b36f6938d4e980a5a97d8c202bd9"
+      }
+    },
+    {
+      "id": "ffvi-11",
+      "title": "Opera House / A Rose for You",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 38,
+      "tile_count": 527,
+      "frames": 300,
+      "bytes": 16717,
+      "duration_ms": 12000,
+      "sha256": "6c6401b366a4b9a5f9fec277340a4a5fcd1291c7ddb38404c0fa0ce6d50ad49b",
+      "file": "packs/ffvi-11.sntl",
+      "preview": {
+        "file": "previews/ffvi-11.gif",
+        "bytes": 251395,
+        "sha256": "a99f93464c6594bc6c8c768fde5543427854a94b2d34924f522f7577708742f9"
+      }
+    },
+    {
+      "id": "ffvi-13",
+      "title": "Sealed Gate / Esper Awakening",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 39,
+      "tile_count": 5057,
+      "frames": 300,
+      "bytes": 129689,
+      "duration_ms": 12000,
+      "sha256": "a6a1f9f4a611c7fd005a952674c8de9b70ae44c3f5b2163b55a5e9f9d0e48fbf",
+      "file": "packs/ffvi-13.sntl",
+      "preview": {
+        "file": "previews/ffvi-13.gif",
+        "bytes": 267481,
+        "sha256": "533514a1941e3ed1bc653d54f0800635ad868285d4b66e7bcf5e49c1369d2140"
+      }
+    },
+    {
+      "id": "ffvi-18",
+      "title": "Whelk / Shell Shock",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 47,
+      "tile_count": 654,
+      "frames": 300,
+      "bytes": 18115,
+      "duration_ms": 12000,
+      "sha256": "350bf054b4cef6262c557ff644116ec694f7c23f2e76e82aac07dfc1af6695d0",
+      "file": "packs/ffvi-18.sntl",
+      "preview": {
+        "file": "previews/ffvi-18.gif",
+        "bytes": 134844,
+        "sha256": "8244f78362ba95b7e719b357cd958388bb5e7c201bca2da380fbb9b80bdc3926"
+      }
+    }
+  ]
+}

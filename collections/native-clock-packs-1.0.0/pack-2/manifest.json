@@ -1,0 +1,213 @@
+{
+  "name": "Native clock pack 2",
+  "version": "1.0.0",
+  "format": "SNTL",
+  "format_version": 1,
+  "compatible_with_snpk_v1_loader": false,
+  "native_size": [
+    64,
+    64
+  ],
+  "fps": 25,
+  "asset_bytes": 822296,
+  "items": [
+    {
+      "id": "metroid-04",
+      "title": "Maridia / Drifting Colony",
+      "game": "Super Metroid",
+      "tile_size": 4,
+      "palette_colors": 19,
+      "tile_count": 3319,
+      "frames": 300,
+      "bytes": 102700,
+      "duration_ms": 12000,
+      "sha256": "36e7c4c7cab4d7e2cbc01374f6439fb316208ffc3ac0b1e70cb9c602d0f96b99",
+      "file": "packs/metroid-04.sntl",
+      "preview": {
+        "file": "previews/metroid-04.gif",
+        "bytes": 454520,
+        "sha256": "b30303e3d0a7b36c454538cc024b6f12eba9cc176ea3170a61289dc4e331db51"
+      }
+    },
+    {
+      "id": "allstars-01",
+      "title": "Water Land / Luigi’s Ferry",
+      "game": "Super Mario All-Stars",
+      "tile_size": 4,
+      "palette_colors": 20,
+      "tile_count": 814,
+      "frames": 300,
+      "bytes": 34276,
+      "duration_ms": 12000,
+      "sha256": "f543aa7052c69ce650017219e65cee130093de78f1674bc1b6bf796a27699e1a",
+      "file": "packs/allstars-01.sntl",
+      "preview": {
+        "file": "previews/allstars-01.gif",
+        "bytes": 207590,
+        "sha256": "dc23cbecf753f288151b8e75f0c273bc890da2c3a3bbcad993e6b0671106b415"
+      }
+    },
+    {
+      "id": "dkc2-01",
+      "title": "Rambi Rumble / Rhino Charge",
+      "game": "Donkey Kong Country 2: Diddy’s Kong Quest",
+      "tile_size": 4,
+      "palette_colors": 17,
+      "tile_count": 2471,
+      "frames": 300,
+      "bytes": 86188,
+      "duration_ms": 12000,
+      "sha256": "f124b364902c006e86ef08589b3f481bd8f83c9c5062e2905396a19953d5e705",
+      "file": "packs/dkc2-01.sntl",
+      "preview": {
+        "file": "previews/dkc2-01.gif",
+        "bytes": 395782,
+        "sha256": "7bf6ab4436f300f9f44ae41254e745b4b98ede6f350d67564e43767ce08e3911"
+      }
+    },
+    {
+      "id": "dkc2-02",
+      "title": "Squawks’s Shaft / Lantern Flight",
+      "game": "Donkey Kong Country 2: Diddy’s Kong Quest",
+      "tile_size": 4,
+      "palette_colors": 25,
+      "tile_count": 3021,
+      "frames": 300,
+      "bytes": 83104,
+      "duration_ms": 12000,
+      "sha256": "ccb79b6ea8eaceef7ba0bfe7f71feccf0603ae2dbbfd54a73d040c7bd91708a4",
+      "file": "packs/dkc2-02.sntl",
+      "preview": {
+        "file": "previews/dkc2-02.gif",
+        "bytes": 327548,
+        "sha256": "fdbde9a7e0b3dec0d7e4c6fb4ea0cafd4142150594b541af6228e2fed17b4435"
+      }
+    },
+    {
+      "id": "streetfighter-01",
+      "title": "Suzaku Castle / Ryu versus Chun-Li",
+      "game": "Street Fighter II Turbo: Hyper Fighting",
+      "tile_size": 8,
+      "palette_colors": 100,
+      "tile_count": 182,
+      "frames": 300,
+      "bytes": 15099,
+      "duration_ms": 12000,
+      "sha256": "3e7c36978db8e47243bff6df4d2f9bba021b7902526d2468a463afc610d2d209",
+      "file": "packs/streetfighter-01.sntl",
+      "preview": {
+        "file": "previews/streetfighter-01.gif",
+        "bytes": 296539,
+        "sha256": "b765020a29a5008c4f0c85117e65431424ad73fb2ffed1b0fa3459b2971002cf"
+      }
+    },
+    {
+      "id": "mariokart-04",
+      "title": "Rainbow Road / Yoshi under the Stars",
+      "game": "Super Mario Kart",
+      "tile_size": 4,
+      "palette_colors": 27,
+      "tile_count": 5855,
+      "frames": 300,
+      "bytes": 157378,
+      "duration_ms": 12000,
+      "sha256": "447ed9bfd95f4a7d976b16b9deb2b92cb98c97bff1ec39b8f913e3872b96b15b",
+      "file": "packs/mariokart-04.sntl",
+      "preview": {
+        "file": "previews/mariokart-04.gif",
+        "bytes": 364743,
+        "sha256": "694e0c59156995893a8ef1a86d9f1a00871c971504b2a47837776b39c0963dbd"
+      }
+    },
+    {
+      "id": "ffvi-03",
+      "title": "Zozo / Rain & Rooftops",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 31,
+      "tile_count": 3309,
+      "frames": 300,
+      "bytes": 117480,
+      "duration_ms": 12000,
+      "sha256": "53667eb3d197773babc7207984607ea69191811abf13b7cfda9259324ee7a257",
+      "file": "packs/ffvi-03.sntl",
+      "preview": {
+        "file": "previews/ffvi-03.gif",
+        "bytes": 415342,
+        "sha256": "2c5e64fdca880651edb5a6cc8964ac72575bc0863e3ed58d4f536e3a7f6540da"
+      }
+    },
+    {
+      "id": "ffvi-07",
+      "title": "Floating Continent / Edge of Ruin",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 22,
+      "tile_count": 1625,
+      "frames": 300,
+      "bytes": 46601,
+      "duration_ms": 12000,
+      "sha256": "dff538dcf0d0fe13d94d78dbef2af42de52e5d126b3c5ce17891869c8881f9c4",
+      "file": "packs/ffvi-07.sntl",
+      "preview": {
+        "file": "previews/ffvi-07.gif",
+        "bytes": 320532,
+        "sha256": "6a647c1fea338fc0c87ea59c1df7314f3bd729fa9752413cbb221daac1c16a1c"
+      }
+    },
+    {
+      "id": "ffvi-10",
+      "title": "Narshe Cavern / Dance for Treasure",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 32,
+      "tile_count": 1646,
+      "frames": 300,
+      "bytes": 45525,
+      "duration_ms": 12000,
+      "sha256": "cddfd8d9778fd53df69ba164ad787c8047b96c2df6b35d8a0429f1c517c036cf",
+      "file": "packs/ffvi-10.sntl",
+      "preview": {
+        "file": "previews/ffvi-10.gif",
+        "bytes": 305689,
+        "sha256": "59ab0289c91b00a09f4bb8f9f1387050ef04c61d713de69a43c5fa9d9e6e031b"
+      }
+    },
+    {
+      "id": "ffvi-15",
+      "title": "Ultros / Fire Dance",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 35,
+      "tile_count": 2607,
+      "frames": 300,
+      "bytes": 76441,
+      "duration_ms": 12000,
+      "sha256": "f5080521ccc77565b04dde8ab9ee68841ce4462c86718b72eea448736b9dd3ae",
+      "file": "packs/ffvi-15.sntl",
+      "preview": {
+        "file": "previews/ffvi-15.gif",
+        "bytes": 246713,
+        "sha256": "80e9fc2cf5a5055a463afbdf6c0716fb1103bd013c8dde226bad91da2bdd2c34"
+      }
+    },
+    {
+      "id": "ffvi-22",
+      "title": "Forest Swarm / Dance & Cure",
+      "game": "Final Fantasy VI",
+      "tile_size": 4,
+      "palette_colors": 30,
+      "tile_count": 1413,
+      "frames": 300,
+      "bytes": 57504,
+      "duration_ms": 12000,
+      "sha256": "35c1e43102a64c99dd0a7b6661423bc5a5eea4e43c62edc57644fc48133bee2d",
+      "file": "packs/ffvi-22.sntl",
+      "preview": {
+        "file": "previews/ffvi-22.gif",
+        "bytes": 344282,
+        "sha256": "d44225afc70f12b6ffca8d6590ad935dce58ee8baadee62f653cdb8f9e542d55"
+      }
+    }
+  ]
+}

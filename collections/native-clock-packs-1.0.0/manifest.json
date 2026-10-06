@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "format": "SNTL",
+  "packs": [
+    {
+      "pack": "1",
+      "faces": 15,
+      "archive": "snes-clock-pack-1-1.0.0.zip",
+      "archive_bytes": 1641527,
+      "sha256": "873694068667101a53b6f1e0f63a74889ce16b48653a911a043a8d26865050aa",
+      "asset_bytes": 757427,
+      "compiled_ota_bytes": 1757616,
+      "free_bytes": 77392
+    },
+    {
+      "pack": "2",
+      "faces": 11,
+      "archive": "snes-clock-pack-2-1.0.0.zip",
+      "archive_bytes": 1671565,
+      "sha256": "a06f949096981771f9d04082beb4ef12f241ba8bd31ab4686fbf3b8b9617a392",
+      "asset_bytes": 822296,
+      "compiled_ota_bytes": 1822160,
+      "free_bytes": 12848
+    },
+    {
+      "pack": "3",
+      "faces": 15,
+      "archive": "snes-clock-pack-3-1.0.0.zip",
+      "archive_bytes": 1963658,
+      "sha256": "d819cd2584f3bececa91786a0742354b65db72a2288ab250b3fd7c697882677f",
+      "asset_bytes": 819556,
+      "compiled_ota_bytes": 1819776,
+      "free_bytes": 15232
+    }
+  ]
+}

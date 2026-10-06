@@ -1,0 +1,699 @@
+{
+  "passed": 15,
+  "failed": 0,
+  "total_frames": 4500,
+  "comparisons_per_frame": 5,
+  "physical_device_playback_tested": false,
+  "results": [
+    {
+      "id": "zelda-03",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 63.13
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 70.5767
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 66.8433
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 65.8033
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 65.3733
+        }
+      ]
+    },
+    {
+      "id": "zelda-04",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 66.94
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 66.3967
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 66.2233
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 68.8233
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 65.8333
+        }
+      ]
+    },
+    {
+      "id": "zelda-05",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 63.65
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 62.5133
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.68
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.06
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.6633
+        }
+      ]
+    },
+    {
+      "id": "metroid-01",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.4467
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.87
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.27
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 59.2233
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.6633
+        }
+      ]
+    },
+    {
+      "id": "yoshi-03",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.2767
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.5067
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.5367
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 52.26
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 50.3133
+        }
+      ]
+    },
+    {
+      "id": "allstars-03",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.3
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 54.0833
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 60.3367
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.4133
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.83
+        }
+      ]
+    },
+    {
+      "id": "dkc2-03",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 52.29
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.91
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.9667
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.6367
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 50.4767
+        }
+      ]
+    },
+    {
+      "id": "ffvi-02",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 49.7267
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 52.2767
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 50.8167
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.4333
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.0233
+        }
+      ]
+    },
+    {
+      "id": "ffvi-06",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.9333
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.14
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.25
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.9333
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 54.17
+        }
+      ]
+    },
+    {
+      "id": "ffvi-08",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.8533
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 59.2067
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.2933
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 60.1933
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 60.7167
+        }
+      ]
+    },
+    {
+      "id": "ffvi-12",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.46
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.88
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 51.8367
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 54.75
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.17
+        }
+      ]
+    },
+    {
+      "id": "ffvi-14",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 52.9333
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 53.1733
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 61.1267
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 60.6467
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.0667
+        }
+      ]
+    },
+    {
+      "id": "ffvi-16",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 69.79
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 72.86
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.4433
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.42
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 54.4667
+        }
+      ]
+    },
+    {
+      "id": "ffvi-17",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 54.81
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.9567
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.8333
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.8133
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.5667
+        }
+      ]
+    },
+    {
+      "id": "ffvi-19",
+      "frames": 300,
+      "checks": [
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 55.41
+        },
+        {
+          "hour": 21,
+          "minute": 57,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 59.46
+        },
+        {
+          "hour": 0,
+          "minute": 0,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 57.08
+        },
+        {
+          "hour": 23,
+          "minute": 59,
+          "mode": "clock",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 58.6367
+        },
+        {
+          "hour": 12,
+          "minute": 34,
+          "mode": "raw",
+          "frames": 300,
+          "player_bytes": 656,
+          "host_us_per_frame_with_io": 56.3933
+        }
+      ]
+    }
+  ]
+}

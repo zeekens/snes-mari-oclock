@@ -1,5 +1,19 @@
 # SNES clock packs
 
+## Native clock packs 1, 2 and 3
+
+[Download and browse the three native packs](collections/native-clock-packs-1.0.0/README.md)
+— **41 faces**, split into **15 / 11 / 15**. All three compiled selections fit
+the current 1.75 MiB OTA slot, one pack at a time. Includes animated previews,
+native assets, firmware build source, checksums and measured size reports.
+Both discarded Chrono Trigger faces and the Zelda zoom tour are excluded.
+
+These use **SNTL and require a firmware rebuild**. They cannot be installed using
+the older SNPK download selector described below. No ready-to-flash image or
+private device credentials are included.
+
+## Original downloadable SNPK packs
+
 Five downloadable SNPK v1 scene packs for the SNES clock's `packs-1.0.0` firmware.
 This repository is the pack library; it does not contain a flashable firmware image.
 The clock downloads one selected pack, checks its SHA-256, and renders it locally.
