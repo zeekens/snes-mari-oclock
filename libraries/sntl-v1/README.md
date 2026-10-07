@@ -1,5 +1,9 @@
 # Downloadable SNTL libraries
 
+**Experimental:** this index targets development firmware. Host pixel validation
+passes, but device performance and restart recovery are still under test. Do not
+treat the index as a released firmware upgrade. Existing SNPK firmware ignores it.
+
 This catalog exposes the existing 41 validated native faces as three libraries
 for clock firmware `sntl-2.0.0` or later. The clock downloads and verifies one
 selected scene at a time into an inactive flash cache, then activates it. The
