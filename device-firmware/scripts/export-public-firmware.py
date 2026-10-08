@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ['requirements.txt', 'firmware/snes-clock.yaml', 'firmware/snes-clock-device.yaml',
          'scripts/firmware-release.py', 'scripts/export-public-firmware.py',
-         'tests/firmware_release_test.py', 'tests/native_stream_test.cpp',
+         'tests/firmware_release_test.py', 'tests/firmware_url_test.cpp', 'tests/native_stream_test.cpp',
          'tests/fixtures/native_scene_v1.h', 'tests/fixtures/zelda-01.sntl', 'tests/fixtures/README.md',
          'docs/FIRMWARE-UPDATES.md', 'deploy/firmware-server/compose.yaml', 'deploy/firmware-server/nginx.conf']
 
@@ -14,6 +14,7 @@ def export(destination):
     paths = [ROOT / f for f in FILES]
     paths += sorted((ROOT / 'firmware/include').glob('*.h'))
     paths += sorted(p for p in (ROOT / 'firmware/components/native_library').iterdir() if p.suffix in ('.h','.cpp','.py'))
+    paths += sorted(p for p in (ROOT / 'firmware/components/firmware_transport').iterdir() if p.suffix in ('.h','.cpp','.py'))
     # Also check against local secret values if provisioned. Report paths only.
     import yaml
     secret_file = ROOT / 'firmware/secrets.yaml'

@@ -7,7 +7,7 @@ substitutions:
   ota_password: build-only-do-not-deploy
   firmware_download_user: build-only
   firmware_download_password: build-only
-  firmware_version: sntl-2.1.0
+  firmware_version: sntl-2.1.1
   firmware_manifest_url: https://raw.githubusercontent.com/zeekens/snes-mari-oclock/main/firmware/releases/stable.json
 
 esphome:
@@ -21,8 +21,6 @@ esphome:
     priority: -100
     then:
       - lambda: |-
-          id(firmware_ota).set_username("${firmware_download_user}");
-          id(firmware_ota).set_password("${firmware_download_password}");
           id(pack_loader).set_clock(&id(scene));
   includes:
     - include/reference_sprites.h
@@ -31,6 +29,7 @@ esphome:
     - include/scene_catalog.h
     - include/scene_library.h
     - include/native_scene.h
+    - include/firmware_url.h
     - include/native_catalog.h
     - include/selected_sprites.h
     - include/clock_core.h
@@ -40,7 +39,7 @@ esphome:
 
 external_components:
   - source: components
-    components: [native_library]
+    components: [native_library, firmware_transport]
 
 native_library:
   id: pack_loader
@@ -119,6 +118,7 @@ ota:
 
   - platform: http_request
     id: firmware_ota
+    http_request_id: private_firmware_http
     on_begin:
       then:
         - lambda: id(pack_loader).cancel();
@@ -135,10 +135,17 @@ http_request:
   buffer_size_rx: 1024
   buffer_size_tx: 512
 
+firmware_transport:
+  id: private_firmware_http
+  http_request_id: firmware_http
+  username: ${firmware_download_user}
+  password: ${firmware_download_password}
+
 update:
   - platform: http_request
     id: clock_firmware
     name: Firmware
+    http_request_id: firmware_http
     source: ${firmware_manifest_url}
     update_interval: 24h
 

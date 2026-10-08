@@ -24,7 +24,9 @@ Copy the four existing device secrets plus `firmware_download_user` and
 generated URL-safe download password. The shared YAML's build-only defaults are
 for compilation, not deployment. Build with the pinned ESPHome version in
 requirements.txt using `esphome compile firmware/snes-clock-device.yaml`.
-Do not turn on VERY_VERBOSE HTTP logs: upstream can log Basic Auth URLs.
+Credentials travel only in an Authorization header to the exact allowed HTTPS
+host and release directory; URLs contain no credentials, including error logs.
+The firmware transport rejects other origins, redirects, queries and traversal.
 
 The server's `htpasswd` is generated locally and must not be committed. Keep its
 parent directory private (0700); the mounted hash file must be readable by nginx.
