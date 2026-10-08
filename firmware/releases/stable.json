@@ -1,16 +1,16 @@
 {
   "name": "SNES Clock firmware",
-  "version": "sntl-2.1.1",
+  "version": "sntl-2.1.2",
   "builds": [
     {
       "chipFamily": "ESP32",
       "ota": {
-        "path": "https://git.local.weylandyutani.se/clock-firmware/releases/sntl-2.1.1.bin",
-        "md5": "a84c7aa330dc019e20bd75b770e7f423",
-        "sha256": "9fe16433a6b6df0972bcd996b93cbc4cfeabb347bef4ac499091e632be3db57b",
-        "size": 1042272,
-        "release_url": "https://github.com/zeekens/snes-mari-oclock/releases/tag/sntl-2.1.1",
-        "summary": "Firmware update checks every 24 hours, manual installation in Home Assistant, and authenticated private downloads with credentials excluded from URLs."
+        "path": "https://git.local.weylandyutani.se/clock-firmware/releases/sntl-2.1.2.bin",
+        "md5": "bbfddc656f1052830ee0981de8411cf3",
+        "sha256": "3f742ffbc82b2cf19831536ab5aa058a0dfaf08d802a441b29d30b35bec5dd48",
+        "size": 1042528,
+        "release_url": "https://github.com/zeekens/snes-mari-oclock/releases/tag/sntl-2.1.2",
+        "summary": "Firmware updater bootstrap with local DNS resolution for the private download host."
       }
     }
   ]

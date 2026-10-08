@@ -55,3 +55,7 @@ Git hostname. Other routes/services are unchanged.
 
 The initial installation needs the existing ESPHome push-OTA path to introduce
 this feature. Subsequent releases use the Home Assistant Install control.
+
+This installation uses its DHCP gateway as the primary DNS resolver on each
+Wi-Fi connection, so the private download hostname resolves through the home
+network DNS. DHCP addresses and the secondary DNS resolver are retained.
