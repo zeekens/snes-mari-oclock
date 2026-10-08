@@ -33,10 +33,13 @@ private. The release remains a prerelease because restart recovery is unresolved
 After the scene/message tests, a manual restart with ffvi-14 selected left the
 native API unavailable. The recovery OTA port initially remained reachable.
 This resembles the earlier SNTL recovery issue; its cause is not established.
-No partition changes or further recovery uploads were attempted. The user was
-asked to disconnect power for 10 seconds and reconnect. Restoration of the original
-Zelda selection failed while the API was unavailable. Physical-panel confirmation
-and restart recovery are therefore still required before calling this stable.
+No partition changes or further recovery uploads were attempted. Approximately
+five minutes later, the API returned on 2.1.3 and restored ffvi-14 from cache.
+Whether the user power-cycled it or it recovered by itself is not confirmed. A
+fresh firmware check while that large scene played passed. The original Zelda
+selection was then restored, and the successful-boot log was observed.
+Physical-panel confirmation and an explanation of the restart delay are still
+required before calling this stable.
 
 GitHub's raw manifest can remain cached for up to five minutes after publication;
 the test waited for the normal update check to see the new version.

@@ -8,7 +8,7 @@ FILES = ['requirements.txt', 'firmware/snes-clock.yaml', 'firmware/snes-clock-de
          'scripts/firmware-release.py', 'scripts/export-public-firmware.py',
          'tests/firmware_release_test.py', 'tests/firmware_url_test.cpp', 'tests/native_stream_test.cpp',
          'tests/fixtures/native_scene_v1.h', 'tests/fixtures/zelda-01.sntl', 'tests/fixtures/README.md',
-         'docs/FIRMWARE-UPDATES.md', 'deploy/firmware-server/compose.yaml', 'deploy/firmware-server/nginx.conf']
+         'docs/FIRMWARE-UPDATES.md', 'docs/FIRMWARE-UPDATE-VALIDATION.md', 'deploy/firmware-server/compose.yaml', 'deploy/firmware-server/nginx.conf']
 
 def export(destination):
     paths = [ROOT / f for f in FILES]
