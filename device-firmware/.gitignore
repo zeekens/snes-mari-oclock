@@ -1,0 +1,9 @@
+firmware/secrets.yaml
+firmware/.esphome/
+.venv/
+__pycache__/
+*.bin
+*.elf
+*.log
+deploy/firmware-server/htpasswd
+deploy/firmware-server/releases/

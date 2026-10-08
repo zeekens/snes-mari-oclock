@@ -1,0 +1,413 @@
+# Compile-only until docs/HARDWARE.md checks are complete. Display pin map measured by user; panel settings still require validation.
+substitutions:
+  device_name: snes-clock
+  wifi_ssid: SNES_CLOCK_BUILD_ONLY
+  wifi_password: build-only-not-a-real-password
+  api_key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  ota_password: build-only-do-not-deploy
+  firmware_download_user: build-only
+  firmware_download_password: build-only
+  firmware_version: sntl-2.1.0
+  firmware_manifest_url: https://raw.githubusercontent.com/zeekens/snes-mari-oclock/main/firmware/releases/stable.json
+
+esphome:
+  name: ${device_name}
+  friendly_name: SNES Clock
+  project:
+    name: snes.clock
+    version: ${firmware_version}
+  min_version: 2026.8.2
+  on_boot:
+    priority: -100
+    then:
+      - lambda: |-
+          id(firmware_ota).set_username("${firmware_download_user}");
+          id(firmware_ota).set_password("${firmware_download_password}");
+          id(pack_loader).set_clock(&id(scene));
+  includes:
+    - include/reference_sprites.h
+    - include/luigi_sprites.h
+    - include/scene_pack.h
+    - include/scene_catalog.h
+    - include/scene_library.h
+    - include/native_scene.h
+    - include/native_catalog.h
+    - include/selected_sprites.h
+    - include/clock_core.h
+    - include/night_schedule.h
+    - <night_schedule.h>
+    - <clock_core.h> # declare custom global type before ESPHome static storage
+
+external_components:
+  - source: components
+    components: [native_library]
+
+native_library:
+  id: pack_loader
+
+esp32:
+  board: esp32dev
+  flash_size: 4MB # confirmed by serial identification and two full reads
+  framework:
+    type: esp-idf
+
+logger:
+  level: INFO
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
+  reboot_timeout: 0s
+
+api:
+  encryption:
+    key: ${api_key}
+  reboot_timeout: 0s
+  actions:
+    - action: use_builtin_scene
+      variables:
+        scene_name: string
+      then:
+        - if:
+            condition:
+              lambda: return id(pack_loader).select_builtin(scene_name);
+            then:
+              - api.respond:
+                  success: true
+            else:
+              - api.respond:
+                  success: false
+                  error_message: Invalid builtin scene
+    - action: cancel_scene_pack
+      then:
+        - lambda: id(pack_loader).cancel();
+    - action: show_message
+      variables:
+        message_text: string
+        mode: string
+        duration_s: int
+        priority: int
+        message_id: string
+      then:
+        - lambda: |-
+            id(scene).queue.submit(std::string(message_text.c_str()), std::string(mode.c_str()), duration_s, priority, std::string(message_id.c_str()), millis());
+        - if:
+            condition:
+              lambda: return id(scene).queue.last_error.empty();
+            then:
+              - api.respond:
+                  success: true
+            else:
+              - api.respond:
+                  success: false
+                  error_message: !lambda return id(scene).queue.last_error;
+    - action: clear_message
+      variables:
+        message_id: string
+      then:
+        - lambda: id(scene).queue.clear(std::string(message_id.c_str()), millis());
+    - action: clear_all_messages
+      then:
+        - lambda: id(scene).queue.clear_all();
+
+ota:
+  - platform: esphome
+    password: ${ota_password}
+    on_begin:
+      then:
+        - lambda: id(pack_loader).cancel();
+
+  - platform: http_request
+    id: firmware_ota
+    on_begin:
+      then:
+        - lambda: id(pack_loader).cancel();
+        - component.suspend: matrix
+    on_error:
+      then:
+        - component.resume: matrix
+
+http_request:
+  id: firmware_http
+  verify_ssl: true
+  follow_redirects: false
+  timeout: 20s
+  buffer_size_rx: 1024
+  buffer_size_tx: 512
+
+update:
+  - platform: http_request
+    id: clock_firmware
+    name: Firmware
+    source: ${firmware_manifest_url}
+    update_interval: 24h
+
+time:
+  - platform: sntp
+    id: clock_time
+    timezone: Europe/Stockholm
+
+globals:
+  - id: night_output
+    type: snes::NightDisplayState
+    restore_value: no
+  - id: applied_panel_brightness
+    type: int
+    restore_value: no
+    initial_value: '-1'
+  - id: render_duration_us
+    type: uint32_t
+    restore_value: no
+    initial_value: "0"
+  - id: scene
+    type: snes::Clock
+    restore_value: no
+
+select:
+  - platform: template
+    name: Night Behavior
+    id: night_behavior
+    optimistic: true
+    restore_value: true
+    initial_option: Display off
+    options:
+      - Display off
+      - Dim
+  - platform: native_library
+    name: Library
+    id: library_choice
+    native_library_id: pack_loader
+    library: true
+  - platform: native_library
+    name: Scene
+    id: scene_choice
+    native_library_id: pack_loader
+
+button:
+  - platform: template
+    name: Check Firmware Update
+    icon: mdi:update
+    entity_category: diagnostic
+    on_press:
+      - component.update: clock_firmware
+  - platform: template
+    name: Refresh Scene Library
+    icon: mdi:cloud-refresh
+    on_press:
+      - lambda: id(pack_loader).refresh_library(wifi::global_wifi_component->is_connected() && id(clock_time).now().is_valid());
+  - platform: restart
+    name: Restart Clock
+    entity_category: diagnostic
+
+switch:
+  - platform: template
+    name: Night Schedule
+    id: night_schedule_enabled
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_OFF
+  - platform: template
+    name: Smooth Scrolling
+    id: smooth_scrolling
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+  - platform: template
+    name: Display
+    id: display_enabled
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+  - platform: template
+    name: Animation
+    id: animation_enabled
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+
+datetime:
+  - platform: template
+    type: time
+    name: Night Starts At
+    id: night_start
+    optimistic: true
+    restore_value: true
+    initial_value: '00:00:00'
+  - platform: template
+    type: time
+    name: Day Starts At
+    id: night_end
+    optimistic: true
+    restore_value: true
+    initial_value: '06:00:00'
+
+number:
+  - platform: template
+    name: Night Brightness
+    id: night_brightness
+    min_value: 0
+    max_value: 100
+    step: 1
+    unit_of_measurement: '%'
+    optimistic: true
+    restore_value: true
+    initial_value: 5
+  - platform: template
+    name: Brightness
+    id: brightness
+    min_value: 0
+    max_value: 100
+    step: 1
+    unit_of_measurement: '%'
+    optimistic: true
+    restore_value: true
+    initial_value: 5
+
+binary_sensor:
+  - platform: template
+    name: Night Schedule Active
+    lambda: return id(night_output).active;
+  - platform: template
+    name: Display Active
+    lambda: return id(night_output).display_on;
+  - platform: status
+    name: Status
+
+sensor:
+  - platform: template
+    name: Effective Brightness
+    unit_of_measurement: '%'
+    lambda: return id(night_output).brightness;
+    update_interval: 1s
+  - platform: template
+    name: Render Duration
+    lambda: return id(render_duration_us);
+    unit_of_measurement: us
+    entity_category: diagnostic
+    update_interval: 1s
+  - platform: template
+    name: Pack Bytes
+    lambda: return id(pack_loader).active_bytes();
+    update_interval: 1s
+  - platform: template
+    name: Largest Free Heap Block
+    lambda: return heap_caps_get_largest_free_block(MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+    unit_of_measurement: B
+    entity_category: diagnostic
+    update_interval: 5s
+  - platform: template
+    name: Pack Worker Stack Free
+    lambda: return id(pack_loader).worker_stack_free();
+    entity_category: diagnostic
+    update_interval: 5s
+  - platform: uptime
+    name: Uptime
+    update_interval: 60s
+  - platform: wifi_signal
+    name: WiFi Signal
+    update_interval: 60s
+  - platform: template
+    name: Message Count
+    lambda: return id(scene).queue.size();
+    update_interval: 1s
+  - platform: template
+    name: Free Heap
+    unit_of_measurement: B
+    entity_category: diagnostic
+    lambda: return heap_caps_get_free_size(MALLOC_CAP_8BIT);
+    update_interval: 30s
+  - platform: template
+    name: Minimum Free Heap
+    unit_of_measurement: B
+    entity_category: diagnostic
+    lambda: return heap_caps_get_minimum_free_size(MALLOC_CAP_8BIT);
+    update_interval: 30s
+
+text_sensor:
+  - platform: template
+    name: Scene Library Status
+    lambda: return id(pack_loader).library_status();
+    update_interval: 1s
+  - platform: template
+    name: Night Schedule Status
+    lambda: |-
+      if (!id(night_schedule_enabled).state) return {"Disabled"};
+      if (id(night_output).waiting_for_time) return {"Waiting for time"};
+      return id(night_output).active ? std::string("Night") : std::string("Day");
+    update_interval: 1s
+  - platform: template
+    name: Active Scene
+    lambda: return id(pack_loader).active_id();
+    update_interval: 1s
+  - platform: template
+    name: Pack Status
+    lambda: return id(pack_loader).state();
+    update_interval: 1s
+  - platform: template
+    name: Pack Error
+    lambda: return id(pack_loader).error();
+    update_interval: 1s
+  - platform: template
+    name: Last Completed Message
+    lambda: return id(scene).queue.last_completed;
+    update_interval: 1s
+  - platform: template
+    name: Last Message Error
+    lambda: return id(scene).queue.last_error;
+    update_interval: 1s
+
+display:
+  - platform: hub75
+    id: matrix
+    panel_width: 64
+    panel_height: 64
+    rotation: 180
+    brightness: 12
+    bit_depth: 6
+    double_buffer: false
+    # The renderer overwrites every pixel; clearing first exposes a blank frame.
+    auto_clear_enabled: false
+    update_interval: 40ms
+    clock_speed: 8MHZ
+    clock_phase: false
+    shift_driver: GENERIC
+    # User continuity map, 2026-09-26: docs/snes-continuity-top-view.excalidraw.
+    r1_pin: GPIO25
+    g1_pin: GPIO26
+    b1_pin: GPIO27
+    r2_pin: GPIO14
+    g2_pin: GPIO12
+    b2_pin: GPIO13
+    a_pin: GPIO23
+    b_pin: GPIO19
+    c_pin: GPIO5
+    d_pin: GPIO17
+    e_pin: GPIO32
+    lat_pin: GPIO4
+    oe_pin: GPIO15
+    clk_pin: GPIO16
+    lambda: |-
+      const uint32_t frame_started = micros();
+      auto now = id(clock_time).now();
+      auto &clock = id(scene);
+      auto &output = id(night_output);
+      output = snes::night_display(id(night_schedule_enabled).state, now.is_valid(),
+          now.hour * 3600 + now.minute * 60 + now.second,
+          id(night_start).hour * 3600 + id(night_start).minute * 60 + id(night_start).second,
+          id(night_end).hour * 3600 + id(night_end).minute * 60 + id(night_end).second,
+          id(night_behavior).current_option().str() == "Dim", id(display_enabled).state,
+          int(id(brightness).state), int(id(night_brightness).state));
+      // Keep the driver updating even when blank: brightness zero disables its
+      // update loop. Black pixels supply off; never clear the frame before draw.
+      const int panel_brightness = std::max(1, int(output.brightness) * 255 / 100);
+      if (id(applied_panel_brightness) != panel_brightness) {
+        id(matrix).set_brightness(uint8_t(panel_brightness));
+        id(applied_panel_brightness) = panel_brightness;
+      }
+      clock.enabled = output.display_on;
+      clock.animated = id(animation_enabled).state;
+      clock.smooth_background = id(smooth_scrolling).state;
+      auto &pixels = clock.render(millis(), now.hour, now.minute, now.is_valid());
+      for (int y = 0; y < 64; y++) {
+        for (int x = 0; x < 64; x++) {
+          uint32_t c = pixels[y * 64 + x];
+          it.draw_pixel_at(x, y, Color((c >> 16) & 255, (c >> 8) & 255, c & 255));
+        }
+      }
+      id(render_duration_us) = micros() - frame_started;

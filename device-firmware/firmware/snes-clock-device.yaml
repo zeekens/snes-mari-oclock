@@ -1,0 +1,10 @@
+# Device build: credentials live only in the ignored, owner-readable secrets.yaml.
+packages:
+  clock: !include snes-clock.yaml
+substitutions:
+  wifi_ssid: !secret wifi_ssid
+  wifi_password: !secret wifi_password
+  api_key: !secret api_key
+  ota_password: !secret ota_password
+  firmware_download_user: !secret firmware_download_user
+  firmware_download_password: !secret firmware_download_password
