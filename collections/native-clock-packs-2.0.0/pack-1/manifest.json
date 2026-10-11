@@ -1,0 +1,273 @@
+{
+  "name": "Pack 1",
+  "version": "2.0.0",
+  "format": "SNTL",
+  "format_version": 2,
+  "minimum_firmware": "sntl-2.2.0",
+  "items": [
+    {
+      "library": "pack-1",
+      "id": "zelda-01",
+      "name": "Zelda ALTTP - Light World Link's House Overworld",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/zelda-01.sntl",
+      "bytes": 17958,
+      "sha256": "7208326037e6dfa0191d49d1cb7163b887ed8a10547d09d37913c0b23310c598",
+      "playback": {
+        "name": "Zelda ALTTP - Light World Link's House Overworld",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "metroid-05",
+      "name": "Super Metroid - Escape Shaft Samus under Fire",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/metroid-05.sntl",
+      "bytes": 36498,
+      "sha256": "566cf210398f4a1716ecd3974fbe71dd3e85f60415b437843d92dcd51fd9f88b",
+      "playback": {
+        "name": "Super Metroid - Escape Shaft Samus under Fire",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "yoshi-04",
+      "name": "Yoshi's Island - Egg Garden Yoshi Meets the Parade",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/yoshi-04.sntl",
+      "bytes": 45379,
+      "sha256": "3cb7684bc7cf350eaefd86877f6d60f57ee3b530fd58e62da19f6215518e16dc",
+      "playback": {
+        "name": "Yoshi's Island - Egg Garden Yoshi Meets the Parade",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "megaman-01",
+      "name": "Mega Man X - Central Highway Zero's Charge",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/megaman-01.sntl",
+      "bytes": 31628,
+      "sha256": "f7d842312e0f94ac3c5678eaf8acaab672129e7ee91a45b5c43dd96e40b5a9f8",
+      "playback": {
+        "name": "Mega Man X - Central Highway Zero's Charge",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "megaman-03",
+      "name": "Mega Man X - Sting Chameleon Forest X's Buster",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/megaman-03.sntl",
+      "bytes": 67806,
+      "sha256": "a3d5e2c13f01a6c2ce9c7756f694037c2621e53348faef7d1017ab6b7fccec06",
+      "playback": {
+        "name": "Mega Man X - Sting Chameleon Forest X's Buster",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          50,
+          10
+        ],
+        "action": [
+          60,
+          25
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "castlevania-03",
+      "name": "Super Castlevania IV - Castle Approach Simon's Whip",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/castlevania-03.sntl",
+      "bytes": 27921,
+      "sha256": "816560f3cc921d8864950e2ba508f380954c8b19031ac2a70027b02124936639",
+      "playback": {
+        "name": "Super Castlevania IV - Castle Approach Simon's Whip",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          59,
+          1
+        ],
+        "action": [
+          60,
+          38
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "streetfighter-02",
+      "name": "Street Fighter II - Brazil Ryu versus Blanka",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/streetfighter-02.sntl",
+      "bytes": 47548,
+      "sha256": "39b95e4f0f41eb92f1a454957a8270c4ef14670daf2529380f31455057982987",
+      "playback": {
+        "name": "Street Fighter II - Brazil Ryu versus Blanka",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          125,
+          25
+        ],
+        "action": [
+          0,
+          125
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "mariokart-01",
+      "name": "Super Mario Kart - Mario Circuit Mario's Solo Lap",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/mariokart-01.sntl",
+      "bytes": 51079,
+      "sha256": "852c3cc0a9ad09af0d19519c719829341d2ca0ecf3b65d2da5591cc8b085e095",
+      "playback": {
+        "name": "Super Mario Kart - Mario Circuit Mario's Solo Lap",
+        "mode": "continuous",
+        "frame_ms": 60,
+        "note": "Continuous travel or ambience, slowed to two-thirds of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "mariokart-05",
+      "name": "Super Mario Kart - Mario Circuit 1 Whole-Course Minimap",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/mariokart-05.sntl",
+      "bytes": 46372,
+      "sha256": "1aa65593ab3304035616ccd32b26c09f929b63529aec2c4daf063bd6cb5f79ef",
+      "playback": {
+        "name": "Super Mario Kart - Mario Circuit 1 Whole-Course Minimap",
+        "mode": "continuous",
+        "frame_ms": 60,
+        "note": "Continuous travel or ambience, slowed to two-thirds of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "ffvi-01",
+      "name": "FF6 - Narshe Snowfall",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/ffvi-01.sntl",
+      "bytes": 74949,
+      "sha256": "732fb7fbc38ad6b1e71813180fc539b5fa4ad8d69b3dabfef6217d0ebbcae69a",
+      "playback": {
+        "name": "FF6 - Narshe Snowfall",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "ffvi-05",
+      "name": "FF6 - Phantom Train Last Departure",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/ffvi-05.sntl",
+      "bytes": 62625,
+      "sha256": "deebec7faf27a8ecc50217aa4270d0765e1b831e418e6715fa49526569b64a11",
+      "playback": {
+        "name": "FF6 - Phantom Train Last Departure",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "ffvi-09",
+      "name": "FF6 - Lete River Hold On!",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/ffvi-09.sntl",
+      "bytes": 83335,
+      "sha256": "3a4c238262b54ad91d99ded89ee8a5e2e9277ca70c7688ccd351fd649cc1a5be",
+      "playback": {
+        "name": "FF6 - Lete River Hold On!",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "ffvi-11",
+      "name": "FF6 - Opera House A Rose for You",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/ffvi-11.sntl",
+      "bytes": 16733,
+      "sha256": "94c6276ec3bd1c257b3c6c9788a8a543bb586ef496ffe2539bdd7bbcca2f3e7b",
+      "playback": {
+        "name": "FF6 - Opera House A Rose for You",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          0,
+          25
+        ],
+        "action": [
+          25,
+          125
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "ffvi-13",
+      "name": "FF6 - Sealed Gate Esper Awakening",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/ffvi-13.sntl",
+      "bytes": 129705,
+      "sha256": "9ade24d7d930579f095bd1840b035183e30432e2231b32daff245474488c458a",
+      "playback": {
+        "name": "FF6 - Sealed Gate Esper Awakening",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          0,
+          40
+        ],
+        "action": [
+          40,
+          210
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-1",
+      "id": "ffvi-18",
+      "name": "FF6 - Whelk Shell Shock",
+      "path": "collections/native-clock-packs-2.0.0/pack-1/packs/ffvi-18.sntl",
+      "bytes": 18131,
+      "sha256": "68025f1f6cc2787150380648739556ad67169ec5964d21e5d7526e0e0c5fe73f",
+      "playback": {
+        "name": "FF6 - Whelk Shell Shock",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          0,
+          25
+        ],
+        "action": [
+          25,
+          115
+        ],
+        "idle_ms": 120
+      }
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "zelda-01": {
+    "name": "Zelda ALTTP - Light World Link's House Overworld",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "metroid-05": {
+    "name": "Super Metroid - Escape Shaft Samus under Fire",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "yoshi-04": {
+    "name": "Yoshi's Island - Egg Garden Yoshi Meets the Parade",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "megaman-01": {
+    "name": "Mega Man X - Central Highway Zero's Charge",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "megaman-03": {
+    "name": "Mega Man X - Sting Chameleon Forest X's Buster",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      50,
+      10
+    ],
+    "action": [
+      60,
+      25
+    ],
+    "idle_ms": 120
+  },
+  "castlevania-03": {
+    "name": "Super Castlevania IV - Castle Approach Simon's Whip",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      59,
+      1
+    ],
+    "action": [
+      60,
+      38
+    ],
+    "idle_ms": 120
+  },
+  "streetfighter-02": {
+    "name": "Street Fighter II - Brazil Ryu versus Blanka",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      125,
+      25
+    ],
+    "action": [
+      0,
+      125
+    ],
+    "idle_ms": 120
+  },
+  "mariokart-01": {
+    "name": "Super Mario Kart - Mario Circuit Mario's Solo Lap",
+    "mode": "continuous",
+    "frame_ms": 60,
+    "note": "Continuous travel or ambience, slowed to two-thirds of the previous speed."
+  },
+  "mariokart-05": {
+    "name": "Super Mario Kart - Mario Circuit 1 Whole-Course Minimap",
+    "mode": "continuous",
+    "frame_ms": 60,
+    "note": "Continuous travel or ambience, slowed to two-thirds of the previous speed."
+  },
+  "ffvi-01": {
+    "name": "FF6 - Narshe Snowfall",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-05": {
+    "name": "FF6 - Phantom Train Last Departure",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-09": {
+    "name": "FF6 - Lete River Hold On!",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-11": {
+    "name": "FF6 - Opera House A Rose for You",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      25
+    ],
+    "action": [
+      25,
+      125
+    ],
+    "idle_ms": 120
+  },
+  "ffvi-13": {
+    "name": "FF6 - Sealed Gate Esper Awakening",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      40
+    ],
+    "action": [
+      40,
+      210
+    ],
+    "idle_ms": 120
+  },
+  "ffvi-18": {
+    "name": "FF6 - Whelk Shell Shock",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      25
+    ],
+    "action": [
+      25,
+      115
+    ],
+    "idle_ms": 120
+  },
+  "metroid-04": {
+    "name": "Super Metroid - Maridia Drifting Colony",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "allstars-01": {
+    "name": "Super Mario All-Stars - Water Land Luigi's Ferry",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "dkc2-01": {
+    "name": "DKC2 - Rambi Rumble Rhino Charge",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "dkc2-02": {
+    "name": "DKC2 - Squawks's Shaft Lantern Flight",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "streetfighter-01": {
+    "name": "Street Fighter II - Suzaku Castle Ryu versus Chun-Li",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      80,
+      20
+    ],
+    "action": [
+      0,
+      80
+    ],
+    "idle_ms": 120
+  },
+  "mariokart-04": {
+    "name": "Super Mario Kart - Rainbow Road Yoshi under the Stars",
+    "mode": "continuous",
+    "frame_ms": 60,
+    "note": "Continuous travel or ambience, slowed to two-thirds of the previous speed."
+  },
+  "ffvi-03": {
+    "name": "FF6 - Zozo Rain & Rooftops",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-07": {
+    "name": "FF6 - Floating Continent Edge of Ruin",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      20
+    ],
+    "action": [
+      20,
+      90
+    ],
+    "idle_ms": 120
+  },
+  "ffvi-10": {
+    "name": "FF6 - Narshe Cavern Dance for Treasure",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-15": {
+    "name": "FF6 - Ultros Fire Dance",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      25
+    ],
+    "action": [
+      25,
+      115
+    ],
+    "idle_ms": 120
+  },
+  "ffvi-22": {
+    "name": "FF6 - Forest Swarm Dance & Cure",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      20
+    ],
+    "action": [
+      20,
+      120
+    ],
+    "idle_ms": 120
+  },
+  "zelda-03": {
+    "name": "Zelda ALTTP - Fairy Fountain Wings over Water",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "zelda-04": {
+    "name": "Zelda ALTTP - Sanctuary Zelda's Escort",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "zelda-05": {
+    "name": "Zelda ALTTP - Pyramid Chamber Ganon's Fire Ring",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "metroid-01": {
+    "name": "Super Metroid - Crateria Gunship Arrival",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "yoshi-03": {
+    "name": "Yoshi's Island - Kamek's Flight Midnight Magic",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "allstars-03": {
+    "name": "Super Mario All-Stars - Bowser's Keep Fire and Falling Bricks",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "dkc2-03": {
+    "name": "DKC2 - Gloomy Gulch Dixie's Lantern",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-02": {
+    "name": "FF6 - Figaro Desert Citadel",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-06": {
+    "name": "FF6 - Blackjack Above the Clouds",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-08": {
+    "name": "FF6 - Magitek Esper Chamber",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-12": {
+    "name": "FF6 - Phantom Forest Interceptor!",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-14": {
+    "name": "FF6 - South Figaro Rooftop Escape",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-16": {
+    "name": "FF6 - Figaro Desert Chocobo Dash",
+    "mode": "continuous",
+    "frame_ms": 80,
+    "note": "Continuous travel or ambience, slowed to half of the previous speed."
+  },
+  "ffvi-17": {
+    "name": "FF6 - Ultros Fire on the River",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      15
+    ],
+    "action": [
+      15,
+      125
+    ],
+    "idle_ms": 120
+  },
+  "ffvi-19": {
+    "name": "FF6 - Magitek Armor Runic & Ice",
+    "mode": "minute",
+    "frame_ms": 60,
+    "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+    "idle": [
+      0,
+      15
+    ],
+    "action": [
+      15,
+      125
+    ],
+    "idle_ms": 120
+  }
+}

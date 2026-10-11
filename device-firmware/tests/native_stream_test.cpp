@@ -10,8 +10,8 @@ struct Reader {std::vector<uint8_t> bytes;size_t reads=0;static uint8_t read(voi
 int main(int argc,char**argv){
  assert(argc==2);std::ifstream file(argv[1],std::ios::binary);Reader reader;reader.bytes.assign(std::istreambuf_iterator<char>(file),{});
  golden_native_scene::Player direct;snes::native_scene::Player stream;assert(direct.open(reader.bytes.data(),reader.bytes.size()));assert(stream.open_reader(&reader,reader.bytes.size(),Reader::read));
- std::array<uint32_t,4096>a{},b{};for(unsigned i=0;i<direct.frames();++i){assert(direct.render_frame(i,a,21,57));assert(stream.render_frame(i,b,21,57,true,true,true));assert(a==b);}
- for(unsigned i:{0u,50u,299u,1u}){i%=direct.frames();assert(direct.render_frame(i,a,0,0));assert(stream.render_frame(i,b,0,0,true,true,true));assert(a==b);}
+ std::array<uint32_t,4096>a{},b{};for(unsigned i=0;i<direct.frames();++i){assert(direct.render_frame(i,a,21,57,true,false));assert(stream.render_frame(i,b,21,57,true,false,true));assert(a==b);}
+ for(unsigned i:{0u,50u,299u,1u}){i%=direct.frames();assert(direct.render_frame(i,a,0,0,true,false));assert(stream.render_frame(i,b,0,0,true,false,true));assert(a==b);}
  snes::Clock clock;clock.activate_native(stream,0);clock.render(80,21,57);auto clear=clock.pixels;
  assert(clock.queue.submit("HELLO","textbox",3,1,"test",80));clock.render(80,21,57);assert(clear!=clock.pixels);clock.queue.clear_all();clock.render(80,21,57);assert(clear==clock.pixels);
  clock.enabled=false;clock.render(100,21,57);for(auto p:clock.pixels)assert(p==0);clock.enabled=true;assert(clock.set_scene("Mario"));assert(!clock.native_mode);

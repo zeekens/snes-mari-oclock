@@ -1,0 +1,199 @@
+{
+  "name": "Pack 2",
+  "version": "2.0.0",
+  "format": "SNTL",
+  "format_version": 2,
+  "minimum_firmware": "sntl-2.2.0",
+  "items": [
+    {
+      "library": "pack-2",
+      "id": "metroid-04",
+      "name": "Super Metroid - Maridia Drifting Colony",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/metroid-04.sntl",
+      "bytes": 102716,
+      "sha256": "aae1008be9d18ecb4d37c82fecde960a6213ef626d85783a9b4e4474c757fe8c",
+      "playback": {
+        "name": "Super Metroid - Maridia Drifting Colony",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "allstars-01",
+      "name": "Super Mario All-Stars - Water Land Luigi's Ferry",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/allstars-01.sntl",
+      "bytes": 34292,
+      "sha256": "704d3ce88b806d385aa609be278eda8bdbece39b60680308d83730101c5f39f3",
+      "playback": {
+        "name": "Super Mario All-Stars - Water Land Luigi's Ferry",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "dkc2-01",
+      "name": "DKC2 - Rambi Rumble Rhino Charge",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/dkc2-01.sntl",
+      "bytes": 86204,
+      "sha256": "56b70c445466a7c010d194def20cff7407c6ac1e2493c8e2ca13e8a6d3838570",
+      "playback": {
+        "name": "DKC2 - Rambi Rumble Rhino Charge",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "dkc2-02",
+      "name": "DKC2 - Squawks's Shaft Lantern Flight",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/dkc2-02.sntl",
+      "bytes": 83120,
+      "sha256": "612b03a423b9c2bcdb8366f29393ad6713aebb20d7843277e05a67a12b3668ab",
+      "playback": {
+        "name": "DKC2 - Squawks's Shaft Lantern Flight",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "streetfighter-01",
+      "name": "Street Fighter II - Suzaku Castle Ryu versus Chun-Li",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/streetfighter-01.sntl",
+      "bytes": 15115,
+      "sha256": "ad052afe0540e071bdf3d12919ffed0b36e310398938d699750421c0302d138a",
+      "playback": {
+        "name": "Street Fighter II - Suzaku Castle Ryu versus Chun-Li",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          80,
+          20
+        ],
+        "action": [
+          0,
+          80
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "mariokart-04",
+      "name": "Super Mario Kart - Rainbow Road Yoshi under the Stars",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/mariokart-04.sntl",
+      "bytes": 157394,
+      "sha256": "28b384eb0409a6d7f59b165436dd7fc3a0a569c38b4c504ef321dadeee32c017",
+      "playback": {
+        "name": "Super Mario Kart - Rainbow Road Yoshi under the Stars",
+        "mode": "continuous",
+        "frame_ms": 60,
+        "note": "Continuous travel or ambience, slowed to two-thirds of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "ffvi-03",
+      "name": "FF6 - Zozo Rain & Rooftops",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/ffvi-03.sntl",
+      "bytes": 117496,
+      "sha256": "817b64fa8a010fe0bd3a71eaa23072d06d554b9d2472cb79de5caacd9b5e93c4",
+      "playback": {
+        "name": "FF6 - Zozo Rain & Rooftops",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "ffvi-07",
+      "name": "FF6 - Floating Continent Edge of Ruin",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/ffvi-07.sntl",
+      "bytes": 46617,
+      "sha256": "87c40e01ca152f6b8684f62479bb7f4b28ef75dccc3a70bf8459b11395173192",
+      "playback": {
+        "name": "FF6 - Floating Continent Edge of Ruin",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          0,
+          20
+        ],
+        "action": [
+          20,
+          90
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "ffvi-10",
+      "name": "FF6 - Narshe Cavern Dance for Treasure",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/ffvi-10.sntl",
+      "bytes": 45541,
+      "sha256": "44bcaf1286b6495f58500e898e5ea022fa87ebe4aab502e62bb6a389f650ab3b",
+      "playback": {
+        "name": "FF6 - Narshe Cavern Dance for Treasure",
+        "mode": "continuous",
+        "frame_ms": 80,
+        "note": "Continuous travel or ambience, slowed to half of the previous speed."
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "ffvi-15",
+      "name": "FF6 - Ultros Fire Dance",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/ffvi-15.sntl",
+      "bytes": 76457,
+      "sha256": "54e7326af1bd1b09de91ddbac9d5f2247e1e394c2707dab7be918507dcb9c6ca",
+      "playback": {
+        "name": "FF6 - Ultros Fire Dance",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          0,
+          25
+        ],
+        "action": [
+          25,
+          115
+        ],
+        "idle_ms": 120
+      }
+    },
+    {
+      "library": "pack-2",
+      "id": "ffvi-22",
+      "name": "FF6 - Forest Swarm Dance & Cure",
+      "path": "collections/native-clock-packs-2.0.0/pack-2/packs/ffvi-22.sntl",
+      "bytes": 57520,
+      "sha256": "144abc9ec5b726074ffea88d57dcbc835a503a357dcaae9b55ce4876f83c43f1",
+      "playback": {
+        "name": "FF6 - Forest Swarm Dance & Cure",
+        "mode": "minute",
+        "frame_ms": 60,
+        "note": "Quiet idle between minute changes; one action sequence per consecutive minute transition. No action on startup or time corrections.",
+        "idle": [
+          0,
+          20
+        ],
+        "action": [
+          20,
+          120
+        ],
+        "idle_ms": 120
+      }
+    }
+  ]
+}
