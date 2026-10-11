@@ -20,7 +20,7 @@ Quiet clips ping-pong; single-frame clips remain still. Idle excerpts retain the
 ambient movement already present in those source frames. They are not independent
 background layers. Source frames outside the selected excerpts remain in the pack
 for reproducibility; no duplicate minute-long tracks or extra framebuffers exist.
-Startup, invalid time, time corrections and disabled animation do not fire an action.
+Startup, invalid time, nonconsecutive time corrections and disabled animation do not fire an action.
 Consecutive midnight rollover does. Actions are cancelled when animation is disabled.
 
 ## Storage format and compatibility

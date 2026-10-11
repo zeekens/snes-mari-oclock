@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FILES = ['requirements.txt', 'firmware/snes-clock.yaml', 'firmware/snes-clock-device.yaml',
          'scripts/firmware-release.py', 'scripts/export-public-firmware.py',
          'tests/firmware_release_test.py', 'tests/firmware_url_test.cpp', 'tests/native_stream_test.cpp',
-         'tests/native_quality_test.cpp', 'docs/SCENE-PACK-QUALITY.md',
+         'tests/native_quality_test.cpp', 'docs/SCENE-PACK-QUALITY.md', 'docs/SCENE-PACK-VALIDATION.md',
          'scene-packs/source-catalog.json', 'scene-packs/quality-policy.json',
          'scripts/native-packs/build.py', 'scripts/native-packs/verify.py',
          'scripts/native-packs/preview.py', 'scripts/native-packs/preview.html', 'scripts/native-packs/proof.cpp',

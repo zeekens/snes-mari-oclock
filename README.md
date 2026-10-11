@@ -1,16 +1,33 @@
 # SNES clock packs
 
-## Native clock packs 1, 2 and 3
+## Current native packs — 2.0.0
 
-[Download and browse the three native packs](collections/native-clock-packs-1.0.0/README.md)
-— **41 faces**, split into **15 / 11 / 15**. All three compiled selections fit
-the current 1.75 MiB OTA slot, one pack at a time. Includes animated previews,
-native assets, firmware build source, checksums and measured size reports.
-Both discarded Chrono Trigger faces and the Zelda zoom tour are excluded.
+**41 scenes across Pack 1 / Pack 2 / Pack 3 (15 / 11 / 15)**, using firmware
+**sntl-2.2.0 or later**. Clock colons are centered, names use `Game - Scene`,
+12 action scenes react to the minute change, and 29 travel/ambient scenes play
+more slowly. Mario Kart remains continuously animated.
 
-These use **SNTL and require a firmware rebuild**. They cannot be installed using
-the older SNPK download selector described below. No ready-to-flash image or
-private device credentials are included.
+In Home Assistant, install the compatible firmware, press **Refresh Scene Library**,
+then choose **Library** and **Scene**. The selected SNTL asset downloads from the
+verified GitHub revision and stays in the device's persistent cache. Scene changes
+do not require rebuilding or reflashing firmware.
+
+- [Pack 1 ZIP](collections/native-clock-packs-2.0.0/native-clock-pack-1-2.0.0.zip)
+- [Pack 2 ZIP](collections/native-clock-packs-2.0.0/native-clock-pack-2-2.0.0.zip)
+- [Pack 3 ZIP](collections/native-clock-packs-2.0.0/native-clock-pack-3-2.0.0.zip)
+- [Quality policy and format](device-firmware/docs/SCENE-PACK-QUALITY.md)
+- [All-scene device validation](device-firmware/docs/SCENE-PACK-VALIDATION.md)
+- [Interactive preview source](collections/native-clock-packs-2.0.0/preview/index.html)
+
+All 41 downloads and sampled device framebuffers were verified against the host
+renderer, including a real minute transition, message cleanup and restart recovery.
+The reported Sabin rectangle was not reproduced; physical-panel confirmation of
+that symptom remains pending. Credentials and device-specific firmware binaries
+are not included in this public repository.
+
+[Archived 1.0.0 native packs and original build-time workflow](collections/native-clock-packs-1.0.0/README.md)
+remain available. The SNTL v2 collection requires the newer player; it is not
+compatible with the older SNPK loader below.
 
 ## Original downloadable SNPK packs
 
