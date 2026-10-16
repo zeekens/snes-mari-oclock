@@ -29,6 +29,53 @@ are not included in this public repository.
 remain available. The SNTL v2 collection requires the newer player; it is not
 compatible with the older SNPK loader below.
 
+## Current pack animations
+
+All 41 scenes from the current **2.0.0** packs, rendered from the published scene
+pixels with the corrected clock layout. These GIFs are previews, not installable packs.
+The displayed time is fixed at **12:34**.
+
+Continuous scenes retain their published playback speed. For minute-triggered
+scenes, the GIF demonstrates a short idle → action → idle sequence; on the clock,
+the action waits for a minute change rather than repeating at this preview rate.
+
+### Pack 1 · 15 scenes
+
+| | |
+|---|---|
+| **Zelda ALTTP - Light World Link's House Overworld**<br><img src="previews/native-2.0.0/zelda-01.gif" width="256" height="256" alt="Zelda ALTTP - Light World Link&#x27;s House Overworld animated preview"><br>Continuous · 24s loop | **Super Metroid - Escape Shaft Samus under Fire**<br><img src="previews/native-2.0.0/metroid-05.gif" width="256" height="256" alt="Super Metroid - Escape Shaft Samus under Fire animated preview"><br>Continuous · 24s loop |
+| **Yoshi's Island - Egg Garden Yoshi Meets the Parade**<br><img src="previews/native-2.0.0/yoshi-04.gif" width="256" height="256" alt="Yoshi&#x27;s Island - Egg Garden Yoshi Meets the Parade animated preview"><br>Continuous · 24s loop | **Mega Man X - Central Highway Zero's Charge**<br><img src="previews/native-2.0.0/megaman-01.gif" width="256" height="256" alt="Mega Man X - Central Highway Zero&#x27;s Charge animated preview"><br>Continuous · 24s loop |
+| **Mega Man X - Sting Chameleon Forest X's Buster**<br><img src="previews/native-2.0.0/megaman-03.gif" width="256" height="256" alt="Mega Man X - Sting Chameleon Forest X&#x27;s Buster animated preview"><br>Minute-triggered action | **Super Castlevania IV - Castle Approach Simon's Whip**<br><img src="previews/native-2.0.0/castlevania-03.gif" width="256" height="256" alt="Super Castlevania IV - Castle Approach Simon&#x27;s Whip animated preview"><br>Minute-triggered action |
+| **Street Fighter II - Brazil Ryu versus Blanka**<br><img src="previews/native-2.0.0/streetfighter-02.gif" width="256" height="256" alt="Street Fighter II - Brazil Ryu versus Blanka animated preview"><br>Minute-triggered action | **Super Mario Kart - Mario Circuit Mario's Solo Lap**<br><img src="previews/native-2.0.0/mariokart-01.gif" width="256" height="256" alt="Super Mario Kart - Mario Circuit Mario&#x27;s Solo Lap animated preview"><br>Continuous · 18s loop |
+| **Super Mario Kart - Mario Circuit 1 Whole-Course Minimap**<br><img src="previews/native-2.0.0/mariokart-05.gif" width="256" height="256" alt="Super Mario Kart - Mario Circuit 1 Whole-Course Minimap animated preview"><br>Continuous · 18s loop | **FF6 - Narshe Snowfall**<br><img src="previews/native-2.0.0/ffvi-01.gif" width="256" height="256" alt="FF6 - Narshe Snowfall animated preview"><br>Continuous · 24s loop |
+| **FF6 - Phantom Train Last Departure**<br><img src="previews/native-2.0.0/ffvi-05.gif" width="256" height="256" alt="FF6 - Phantom Train Last Departure animated preview"><br>Continuous · 24s loop | **FF6 - Lete River Hold On!**<br><img src="previews/native-2.0.0/ffvi-09.gif" width="256" height="256" alt="FF6 - Lete River Hold On! animated preview"><br>Continuous · 24s loop |
+| **FF6 - Opera House A Rose for You**<br><img src="previews/native-2.0.0/ffvi-11.gif" width="256" height="256" alt="FF6 - Opera House A Rose for You animated preview"><br>Minute-triggered action | **FF6 - Sealed Gate Esper Awakening**<br><img src="previews/native-2.0.0/ffvi-13.gif" width="256" height="256" alt="FF6 - Sealed Gate Esper Awakening animated preview"><br>Minute-triggered action |
+| **FF6 - Whelk Shell Shock**<br><img src="previews/native-2.0.0/ffvi-18.gif" width="256" height="256" alt="FF6 - Whelk Shell Shock animated preview"><br>Minute-triggered action |  |
+
+### Pack 2 · 11 scenes
+
+| | |
+|---|---|
+| **Super Metroid - Maridia Drifting Colony**<br><img src="previews/native-2.0.0/metroid-04.gif" width="256" height="256" alt="Super Metroid - Maridia Drifting Colony animated preview"><br>Continuous · 24s loop | **Super Mario All-Stars - Water Land Luigi's Ferry**<br><img src="previews/native-2.0.0/allstars-01.gif" width="256" height="256" alt="Super Mario All-Stars - Water Land Luigi&#x27;s Ferry animated preview"><br>Continuous · 24s loop |
+| **DKC2 - Rambi Rumble Rhino Charge**<br><img src="previews/native-2.0.0/dkc2-01.gif" width="256" height="256" alt="DKC2 - Rambi Rumble Rhino Charge animated preview"><br>Continuous · 24s loop | **DKC2 - Squawks's Shaft Lantern Flight**<br><img src="previews/native-2.0.0/dkc2-02.gif" width="256" height="256" alt="DKC2 - Squawks&#x27;s Shaft Lantern Flight animated preview"><br>Continuous · 24s loop |
+| **Street Fighter II - Suzaku Castle Ryu versus Chun-Li**<br><img src="previews/native-2.0.0/streetfighter-01.gif" width="256" height="256" alt="Street Fighter II - Suzaku Castle Ryu versus Chun-Li animated preview"><br>Minute-triggered action | **Super Mario Kart - Rainbow Road Yoshi under the Stars**<br><img src="previews/native-2.0.0/mariokart-04.gif" width="256" height="256" alt="Super Mario Kart - Rainbow Road Yoshi under the Stars animated preview"><br>Continuous · 18s loop |
+| **FF6 - Zozo Rain & Rooftops**<br><img src="previews/native-2.0.0/ffvi-03.gif" width="256" height="256" alt="FF6 - Zozo Rain &amp; Rooftops animated preview"><br>Continuous · 24s loop | **FF6 - Floating Continent Edge of Ruin**<br><img src="previews/native-2.0.0/ffvi-07.gif" width="256" height="256" alt="FF6 - Floating Continent Edge of Ruin animated preview"><br>Minute-triggered action |
+| **FF6 - Narshe Cavern Dance for Treasure**<br><img src="previews/native-2.0.0/ffvi-10.gif" width="256" height="256" alt="FF6 - Narshe Cavern Dance for Treasure animated preview"><br>Continuous · 24s loop | **FF6 - Ultros Fire Dance**<br><img src="previews/native-2.0.0/ffvi-15.gif" width="256" height="256" alt="FF6 - Ultros Fire Dance animated preview"><br>Minute-triggered action |
+| **FF6 - Forest Swarm Dance & Cure**<br><img src="previews/native-2.0.0/ffvi-22.gif" width="256" height="256" alt="FF6 - Forest Swarm Dance &amp; Cure animated preview"><br>Minute-triggered action |  |
+
+### Pack 3 · 15 scenes
+
+| | |
+|---|---|
+| **Zelda ALTTP - Fairy Fountain Wings over Water**<br><img src="previews/native-2.0.0/zelda-03.gif" width="256" height="256" alt="Zelda ALTTP - Fairy Fountain Wings over Water animated preview"><br>Continuous · 24s loop | **Zelda ALTTP - Sanctuary Zelda's Escort**<br><img src="previews/native-2.0.0/zelda-04.gif" width="256" height="256" alt="Zelda ALTTP - Sanctuary Zelda&#x27;s Escort animated preview"><br>Continuous · 24s loop |
+| **Zelda ALTTP - Pyramid Chamber Ganon's Fire Ring**<br><img src="previews/native-2.0.0/zelda-05.gif" width="256" height="256" alt="Zelda ALTTP - Pyramid Chamber Ganon&#x27;s Fire Ring animated preview"><br>Continuous · 24s loop | **Super Metroid - Crateria Gunship Arrival**<br><img src="previews/native-2.0.0/metroid-01.gif" width="256" height="256" alt="Super Metroid - Crateria Gunship Arrival animated preview"><br>Continuous · 24s loop |
+| **Yoshi's Island - Kamek's Flight Midnight Magic**<br><img src="previews/native-2.0.0/yoshi-03.gif" width="256" height="256" alt="Yoshi&#x27;s Island - Kamek&#x27;s Flight Midnight Magic animated preview"><br>Continuous · 24s loop | **Super Mario All-Stars - Bowser's Keep Fire and Falling Bricks**<br><img src="previews/native-2.0.0/allstars-03.gif" width="256" height="256" alt="Super Mario All-Stars - Bowser&#x27;s Keep Fire and Falling Bricks animated preview"><br>Continuous · 24s loop |
+| **DKC2 - Gloomy Gulch Dixie's Lantern**<br><img src="previews/native-2.0.0/dkc2-03.gif" width="256" height="256" alt="DKC2 - Gloomy Gulch Dixie&#x27;s Lantern animated preview"><br>Continuous · 24s loop | **FF6 - Figaro Desert Citadel**<br><img src="previews/native-2.0.0/ffvi-02.gif" width="256" height="256" alt="FF6 - Figaro Desert Citadel animated preview"><br>Continuous · 24s loop |
+| **FF6 - Blackjack Above the Clouds**<br><img src="previews/native-2.0.0/ffvi-06.gif" width="256" height="256" alt="FF6 - Blackjack Above the Clouds animated preview"><br>Continuous · 24s loop | **FF6 - Magitek Esper Chamber**<br><img src="previews/native-2.0.0/ffvi-08.gif" width="256" height="256" alt="FF6 - Magitek Esper Chamber animated preview"><br>Continuous · 24s loop |
+| **FF6 - Phantom Forest Interceptor!**<br><img src="previews/native-2.0.0/ffvi-12.gif" width="256" height="256" alt="FF6 - Phantom Forest Interceptor! animated preview"><br>Continuous · 24s loop | **FF6 - South Figaro Rooftop Escape**<br><img src="previews/native-2.0.0/ffvi-14.gif" width="256" height="256" alt="FF6 - South Figaro Rooftop Escape animated preview"><br>Continuous · 24s loop |
+| **FF6 - Figaro Desert Chocobo Dash**<br><img src="previews/native-2.0.0/ffvi-16.gif" width="256" height="256" alt="FF6 - Figaro Desert Chocobo Dash animated preview"><br>Continuous · 24s loop | **FF6 - Ultros Fire on the River**<br><img src="previews/native-2.0.0/ffvi-17.gif" width="256" height="256" alt="FF6 - Ultros Fire on the River animated preview"><br>Minute-triggered action |
+| **FF6 - Magitek Armor Runic & Ice**<br><img src="previews/native-2.0.0/ffvi-19.gif" width="256" height="256" alt="FF6 - Magitek Armor Runic &amp; Ice animated preview"><br>Minute-triggered action |  |
+
 ## Original downloadable SNPK packs
 
 Five downloadable SNPK v1 scene packs for the SNES clock's `packs-1.0.0` firmware.
