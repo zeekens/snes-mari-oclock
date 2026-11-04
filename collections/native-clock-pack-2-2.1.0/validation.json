@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "physical_panel_tested": false,
+  "scenes": [
+    {
+      "id": "ice-climber-01",
+      "passed": true,
+      "decoded_frames": 128,
+      "clock_oracle_frames": 128,
+      "gif_frames_per_size": 128,
+      "incremental_seek_clock_checks": 2000,
+      "scenery_behind_clock": false,
+      "mario_pixel_collision_checks": 0,
+      "loop_seam_changed_pixels": 0,
+      "largest_step_changed_pixels": 104,
+      "sanitizers": "ASan + UBSan",
+      "timing_and_malformed_input_tests": true,
+      "bytes": 13574,
+      "sha256": "fe50e7c72960ea6002ac5daa0a58dbdaf561e49d95b848ca53447e412192bf7e"
+    },
+    {
+      "id": "donkey-kong-01",
+      "passed": true,
+      "decoded_frames": 128,
+      "clock_oracle_frames": 128,
+      "gif_frames_per_size": 128,
+      "incremental_seek_clock_checks": 2000,
+      "scenery_behind_clock": false,
+      "mario_pixel_collision_checks": 128,
+      "loop_seam_changed_pixels": 6,
+      "largest_step_changed_pixels": 180,
+      "sanitizers": "ASan + UBSan",
+      "timing_and_malformed_input_tests": true,
+      "bytes": 9794,
+      "sha256": "31bb1a0408a232da1d32c8329f888d760369ef864e642b8b7d4f252a3b2f9645"
+    },
+    {
+      "id": "cobra-triangle-01",
+      "passed": true,
+      "decoded_frames": 128,
+      "clock_oracle_frames": 128,
+      "gif_frames_per_size": 128,
+      "incremental_seek_clock_checks": 2000,
+      "scenery_behind_clock": true,
+      "mario_pixel_collision_checks": 0,
+      "loop_seam_changed_pixels": 0,
+      "largest_step_changed_pixels": 391,
+      "sanitizers": "ASan + UBSan",
+      "timing_and_malformed_input_tests": true,
+      "bytes": 14787,
+      "sha256": "91a8737a17d37246bdd9f3a4aefc8618e8dcf735dd3d22f7630874546b1fe4a6"
+    }
+  ]
+}

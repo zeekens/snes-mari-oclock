@@ -1,19 +1,11 @@
 # Downloadable SNTL libraries
 
-**Experimental:** this index targets development firmware. Host pixel validation
-passes, but device performance and restart recovery are still under test. Do not
-treat the index as a released firmware upgrade. Existing SNPK firmware ignores it.
+44 scenes across Pack 1, Pack 2 and Pack 3 (15 / 14 / 15). Pack 2 is version 2.1.0; the other two remain at 2.0.0. Requires firmware **sntl-2.2.0 or later**.
 
-This catalog exposes the existing 41 validated native faces as three libraries
-for clock firmware `sntl-2.0.0` or later. The clock downloads and verifies one
-selected scene at a time into an inactive flash cache, then activates it. The
-previous cached scene survives interrupted downloads. No Wi-Fi credentials,
-API encryption keys, or preconfigured firmware are included.
+Press **Refresh Scene Library** in Home Assistant, then choose the library and scene. The clock verifies and caches one selected asset at a time. No firmware rebuild is required.
 
-The original native pack archives and assets are unchanged. Older `packs-1.x`
-firmware cannot consume this catalog. Maximum individual asset size supported
-by this loader is 160 KiB. Pack selection no longer requires compiling all its
-scenes into one firmware image. Rendering remains 64×64 with a 40 ms animation
-interval and a separately drawn live clock.
+The catalog is limited to 48 downloadable scenes, eight libraries and 24,000 JSON bytes; each native asset can be at most 160 KiB. The eight built-in Classic scenes do not count toward the downloadable scene limit.
 
-Scenes and artwork credits are in `collections/native-clock-packs-1.0.0`.
+The original 41 scenes have recorded device validation. The three new Pack 2 additions have host pixel, playback and sanitizer validation; physical-device playback remains unverified.
+
+[Current packs](../../README.md) · [Pack 2 additions and credits](../../collections/native-clock-pack-2-2.1.0/README.md). Previous collections and assets remain available unchanged.
