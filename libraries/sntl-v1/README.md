@@ -1,6 +1,6 @@
 # Downloadable SNTL libraries
 
-44 scenes across Pack 1, Pack 2 and Pack 3 (15 / 14 / 15). Pack 2 is version 2.1.0; the other two remain at 2.0.0. Requires firmware **sntl-2.2.0 or later**.
+44 scenes across Pack 1, Pack 2 and Pack 3 (15 / 14 / 15). Pack 2 is version 2.1.0; Pack 1 and Pack 3 archives are version 2.0.1. Requires firmware **sntl-2.2.0 or later**.
 
 Press **Refresh Scene Library** in Home Assistant, then choose the library and scene. The clock verifies and caches one selected asset at a time. No firmware rebuild is required.
 

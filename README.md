@@ -1,6 +1,6 @@
 # SNES clock packs
 
-## Current native packs — Pack 2 updated to 2.1.0
+## Current native packs
 
 **44 scenes across Pack 1 / Pack 2 / Pack 3 (15 / 14 / 15)**, using firmware
 **sntl-2.2.0 or later**. Clock colons are centered, names use `Game - Scene`,
@@ -12,9 +12,9 @@ then choose **Library** and **Scene**. The selected SNTL asset downloads from th
 verified GitHub revision and stays in the device's persistent cache. Scene changes
 do not require rebuilding or reflashing firmware.
 
-- [Pack 1 ZIP](collections/native-clock-packs-2.0.0/native-clock-pack-1-2.0.0.zip)
+- [Pack 1 ZIP · 2.0.1](collections/native-clock-packs-2.0.1/native-clock-pack-1-2.0.1.zip)
 - [Pack 2 ZIP · 2.1.0](collections/native-clock-pack-2-2.1.0/native-clock-pack-2-2.1.0.zip)
-- [Pack 3 ZIP](collections/native-clock-packs-2.0.0/native-clock-pack-3-2.0.0.zip)
+- [Pack 3 ZIP · 2.0.1](collections/native-clock-packs-2.0.1/native-clock-pack-3-2.0.1.zip)
 - [Quality policy and format](device-firmware/docs/SCENE-PACK-QUALITY.md)
 - [All-scene device validation](device-firmware/docs/SCENE-PACK-VALIDATION.md)
 - [Pack 2 preview, included in the ZIP](collections/native-clock-pack-2-2.1.0/previews/index.html)
@@ -25,7 +25,7 @@ The reported Sabin rectangle was not reproduced; physical-panel confirmation of
 that symptom remains pending. Credentials and device-specific firmware binaries
 are not included in this public repository.
 
-Pack 2 adds Ice Climber, Donkey Kong and Cobra Triangle. The three additions passed host pixel, clock, playback and sanitizer checks; physical-device validation remains pending. [New collection and validation](collections/native-clock-pack-2-2.1.0/README.md). Pack 1 and Pack 3 remain at 2.0.0.
+Pack 2 adds Ice Climber, Donkey Kong and Cobra Triangle. The three additions passed host pixel, clock, playback and sanitizer checks; physical-device validation remains pending. [New collection and validation](collections/native-clock-pack-2-2.1.0/README.md). Pack 1 and Pack 3 are at 2.0.1. Extract either ZIP and open `previews/index.html` to play its 15 scenes offline.
 
 [Archived 1.0.0 native packs and original build-time workflow](collections/native-clock-packs-1.0.0/README.md)
 remain available. The SNTL v2 collection requires the newer player; it is not
@@ -33,7 +33,7 @@ compatible with the older SNPK loader below.
 
 ## Current pack animations
 
-All 44 scenes from the current packs (Pack 2 **2.1.0**, others **2.0.0**), rendered from the published scene
+All 44 scenes from the current packs (Pack 2 **2.1.0**, others **2.0.1**), rendered from the published scene
 pixels with the corrected clock layout. These GIFs are previews, not installable packs.
 The displayed time is fixed at **12:34**.
 
