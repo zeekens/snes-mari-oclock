@@ -10,12 +10,12 @@ DEST = REPO / 'collections/native-clock-packs-2.0.1'
 VERSION = '2.0.1'
 
 
-def gallery(template, pack_name, scenes):
+def gallery(template, pack_name, scenes, version=VERSION):
     start = template.index('<select id="library">')
     end = template.index('</select>', start) + len('</select>')
     selector = f'<select id="library"><option value="all">{pack_name} · {len(scenes)} scenes</option></select>'
     page = template[:start] + selector + template[end:]
-    page = page.replace('SNES clock · All three packs', f'SNES clock · {pack_name} · {VERSION}')
+    page = page.replace('SNES clock · All three packs', f'SNES clock · {pack_name} · {version}')
     # Embedded metadata and local PNG atlases also work under file://.
     metadata = json.dumps(scenes, separators=(',', ':')).replace('<', r'\u003c')
     page = page.replace('</footer>', f'</footer><script type="application/json" id="scene-data">{metadata}</script>')
