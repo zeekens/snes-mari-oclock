@@ -17,7 +17,7 @@ do not require rebuilding or reflashing firmware.
 - [Pack 3 ZIP](collections/native-clock-packs-2.0.0/native-clock-pack-3-2.0.0.zip)
 - [Quality policy and format](device-firmware/docs/SCENE-PACK-QUALITY.md)
 - [All-scene device validation](device-firmware/docs/SCENE-PACK-VALIDATION.md)
-- [Interactive preview source](collections/native-clock-packs-2.0.0/preview/index.html)
+- [Pack 2 preview, included in the ZIP](collections/native-clock-pack-2-2.1.0/previews/index.html)
 
 The original 41 downloads and sampled device framebuffers were verified against the host
 renderer, including a real minute transition, message cleanup and restart recovery.
