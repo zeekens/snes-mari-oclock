@@ -2,9 +2,9 @@
 
 ## Current native packs
 
-**44 scenes across Pack 1 / Pack 2 / Pack 3 (15 / 14 / 15)**, using firmware
+**45 scenes across Pack 1 / Pack 2 / Pack 3 (15 / 15 / 15)**, using firmware
 **sntl-2.2.0 or later**. Clock colons are centered, names use `Game - Scene`,
-14 action scenes react to the minute change, and 30 travel/ambient scenes play
+15 action scenes react to the minute change, and 30 travel/ambient scenes play
 more slowly. Mario Kart remains continuously animated.
 
 In Home Assistant, install the compatible firmware, press **Refresh Scene Library**,
@@ -13,7 +13,7 @@ verified GitHub revision and stays in the device's persistent cache. Scene chang
 do not require rebuilding or reflashing firmware.
 
 - [Pack 1 ZIP · 2.0.1](collections/native-clock-packs-2.0.1/native-clock-pack-1-2.0.1.zip)
-- [Pack 2 ZIP · 2.1.1](collections/native-clock-pack-2-2.1.1/native-clock-pack-2-2.1.1.zip)
+- [Pack 2 ZIP · 2.2.0](collections/native-clock-pack-2-2.2.0/native-clock-pack-2-2.2.0.zip)
 - [Pack 3 ZIP · 2.0.1](collections/native-clock-packs-2.0.1/native-clock-pack-3-2.0.1.zip)
 - [Quality policy and format](device-firmware/docs/SCENE-PACK-QUALITY.md)
 - [All-scene device validation](device-firmware/docs/SCENE-PACK-VALIDATION.md)
@@ -24,7 +24,7 @@ The reported Sabin rectangle was not reproduced; physical-panel confirmation of
 that symptom remains pending. Credentials and device-specific firmware binaries
 are not included in this public repository.
 
-Pack 2 adds Ice Climber, Donkey Kong and Cobra Triangle. The three additions passed host pixel, clock, playback and sanitizer checks; physical-device validation remains pending. [New collection and validation](collections/native-clock-pack-2-2.1.0/README.md). Pack 1 and Pack 3 are at 2.0.1. Extract any pack ZIP and open `previews/index.html` to play its 15 scenes offline.
+Pack 2 2.2.0 adds **Bubble Bobble - Bubble Trouble**, including the reviewed six-bubble background and minute-triggered capture, pop and fruit sequence. Host pixel, clock, playback, collision and sanitizer checks passed; Bubble Bobble has not been tested on the physical clock. [Collection and validation](collections/native-clock-pack-2-2.2.0/README.md). Pack 1 and Pack 3 remain at 2.0.1. Extract any pack ZIP and open `previews/index.html` to play its 15 scenes offline.
 
 [Archived 1.0.0 native packs and original build-time workflow](collections/native-clock-packs-1.0.0/README.md)
 remain available. The SNTL v2 collection requires the newer player; it is not
@@ -32,7 +32,7 @@ compatible with the older SNPK loader below.
 
 ## Current pack animations
 
-All 44 scenes from the current packs (Pack 2 **2.1.1**, others **2.0.1**), rendered from the published scene
+All 45 scenes from the current packs (Pack 2 **2.2.0**, others **2.0.1**), rendered from the published scene
 pixels with the corrected clock layout. These GIFs are previews, not installable packs.
 The displayed time is fixed at **12:34**.
 
@@ -53,7 +53,7 @@ the action waits for a minute change rather than repeating at this preview rate.
 | **FF6 - Opera House A Rose for You**<br><img src="previews/native-2.0.0/ffvi-11.gif" width="256" height="256" alt="FF6 - Opera House A Rose for You animated preview"><br>Minute-triggered action | **FF6 - Sealed Gate Esper Awakening**<br><img src="previews/native-2.0.0/ffvi-13.gif" width="256" height="256" alt="FF6 - Sealed Gate Esper Awakening animated preview"><br>Minute-triggered action |
 | **FF6 - Whelk Shell Shock**<br><img src="previews/native-2.0.0/ffvi-18.gif" width="256" height="256" alt="FF6 - Whelk Shell Shock animated preview"><br>Minute-triggered action |  |
 
-### Pack 2 · 14 scenes
+### Pack 2 · 15 scenes
 
 | | |
 |---|---|
@@ -64,7 +64,7 @@ the action waits for a minute change rather than repeating at this preview rate.
 | **FF6 - Narshe Cavern Dance for Treasure**<br><img src="previews/native-2.0.0/ffvi-10.gif" width="256" height="256" alt="FF6 - Narshe Cavern Dance for Treasure animated preview"><br>Continuous · 24s loop | **FF6 - Ultros Fire Dance**<br><img src="previews/native-2.0.0/ffvi-15.gif" width="256" height="256" alt="FF6 - Ultros Fire Dance animated preview"><br>Minute-triggered action |
 | **FF6 - Forest Swarm Dance & Cure**<br><img src="previews/native-2.0.0/ffvi-22.gif" width="256" height="256" alt="FF6 - Forest Swarm Dance &amp; Cure animated preview"><br>Minute-triggered action |  |
 | **Ice Climber - Summit Partners**<br><img src="collections/native-clock-pack-2-2.1.0/previews/ice-climber-01-512.gif" width="256" height="256" alt="Ice Climber - Summit Partners animated preview"><br>Minute-triggered climb | **Donkey Kong - Barrel Girders**<br><img src="collections/native-clock-pack-2-2.1.0/previews/donkey-kong-01-512.gif" width="256" height="256" alt="Donkey Kong - Barrel Girders animated preview"><br>Minute-triggered barrel jump |
-| **Cobra Triangle - River Run**<br><img src="collections/native-clock-pack-2-2.1.0/previews/cobra-triangle-01-512.gif" width="256" height="256" alt="Cobra Triangle - River Run animated preview"><br>Continuous · 10.24s loop |  |
+| **Cobra Triangle - River Run**<br><img src="collections/native-clock-pack-2-2.1.0/previews/cobra-triangle-01-512.gif" width="256" height="256" alt="Cobra Triangle - River Run animated preview"><br>Continuous · 10.24s loop | **Bubble Bobble - Bubble Trouble**<br><img src="collections/native-clock-pack-2-2.2.0/previews/bubble-bobble-01-512.gif" width="256" height="256" alt="Bubble Bobble - Bubble Trouble animated preview"><br>Minute-triggered bubble capture and pop |
 
 ### Pack 3 · 15 scenes
 
