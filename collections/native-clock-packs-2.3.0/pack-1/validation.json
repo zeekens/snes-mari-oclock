@@ -1,0 +1,275 @@
+{
+  "physical_panel_visually_tested": false,
+  "scenes": [
+    {
+      "id": "zelda-01",
+      "name": "Zelda ALTTP - Light World Link's House Overworld",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "metroid-05",
+      "name": "Super Metroid - Escape Shaft Samus's Lift",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "yoshi-04",
+      "name": "Yoshi's Island - Egg Garden Yoshi Meets the Parade",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "megaman-01",
+      "name": "Mega Man X - Central Highway Zero's Charge",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "megaman-03",
+      "name": "Mega Man X - Sting Chameleon Forest X's Buster",
+      "library": "pack-1",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 2.0,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "castlevania-03",
+      "name": "Super Castlevania IV - Castle Approach Simon's Whip",
+      "library": "pack-1",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 3.04,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "streetfighter-02",
+      "name": "Street Fighter II - Brazil Ryu versus Blanka",
+      "library": "pack-1",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 10.0,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "mariokart-01",
+      "name": "Super Mario Kart - Mario Circuit Mario's Solo Lap",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "mariokart-05",
+      "name": "Super Mario Kart - Mario Circuit 1 Whole-Course Minimap",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-01",
+      "name": "FF6 - Narshe Snowfall",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-05",
+      "name": "FF6 - Phantom Train Last Departure",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-09",
+      "name": "FF6 - Lete River Hold On!",
+      "library": "pack-1",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-11",
+      "name": "FF6 - Opera House A Rose for You",
+      "library": "pack-1",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 10.0,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-13",
+      "name": "FF6 - Sealed Gate Esper Awakening",
+      "library": "pack-1",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 16.8,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-18",
+      "name": "FF6 - Whelk Shell Shock",
+      "library": "pack-1",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 9.2,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    }
+  ]
+}

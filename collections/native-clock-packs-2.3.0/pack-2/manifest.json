@@ -1,0 +1,144 @@
+{
+  "name": "Pack 2",
+  "version": "2.3.0",
+  "format": "SNTL",
+  "format_version": 2,
+  "minimum_firmware": "sntl-2.2.0",
+  "items": [
+    {
+      "id": "metroid-04",
+      "name": "Super Metroid - Maridia Drifting Colony",
+      "library": "pack-2",
+      "path": "packs/metroid-04.sntl",
+      "bytes": 92428,
+      "sha256": "ebbeb34692c998f18534347a0a8e74b17c43defabd95a5473c4ea07bf3965e13",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/metroid-04.sntl"
+    },
+    {
+      "id": "allstars-01",
+      "name": "Super Mario All-Stars - Water Land Luigi's Crossing",
+      "library": "pack-2",
+      "path": "packs/allstars-01.sntl",
+      "bytes": 34292,
+      "sha256": "704d3ce88b806d385aa609be278eda8bdbece39b60680308d83730101c5f39f3",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/allstars-01.sntl"
+    },
+    {
+      "id": "dkc2-01",
+      "name": "DKC2 - Rambi Rumble Rhino Charge",
+      "library": "pack-2",
+      "path": "packs/dkc2-01.sntl",
+      "bytes": 86204,
+      "sha256": "56b70c445466a7c010d194def20cff7407c6ac1e2493c8e2ca13e8a6d3838570",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/dkc2-01.sntl"
+    },
+    {
+      "id": "dkc2-02",
+      "name": "DKC2 - Squawks's Shaft Lantern Flight",
+      "library": "pack-2",
+      "path": "packs/dkc2-02.sntl",
+      "bytes": 83120,
+      "sha256": "612b03a423b9c2bcdb8366f29393ad6713aebb20d7843277e05a67a12b3668ab",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/dkc2-02.sntl"
+    },
+    {
+      "id": "streetfighter-01",
+      "name": "Street Fighter II - Suzaku Castle Ryu versus Chun-Li",
+      "library": "pack-2",
+      "path": "packs/streetfighter-01.sntl",
+      "bytes": 15115,
+      "sha256": "14ef386184a1366c52c996addc850e44e707b4635039ac7ddf9d1bdd24286633",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/streetfighter-01.sntl"
+    },
+    {
+      "id": "mariokart-04",
+      "name": "Super Mario Kart - Rainbow Road Yoshi under the Stars",
+      "library": "pack-2",
+      "path": "packs/mariokart-04.sntl",
+      "bytes": 160883,
+      "sha256": "9a116d1ccb37b0ad7c9a34f5e3263310e007c1fcb9473e4726a4ed7dbbc90dd7",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/mariokart-04.sntl"
+    },
+    {
+      "id": "ffvi-03",
+      "name": "FF6 - Zozo Rain & Rooftops",
+      "library": "pack-2",
+      "path": "packs/ffvi-03.sntl",
+      "bytes": 117496,
+      "sha256": "817b64fa8a010fe0bd3a71eaa23072d06d554b9d2472cb79de5caacd9b5e93c4",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/ffvi-03.sntl"
+    },
+    {
+      "id": "ffvi-07",
+      "name": "FF6 - Floating Continent Edge of Ruin",
+      "library": "pack-2",
+      "path": "packs/ffvi-07.sntl",
+      "bytes": 46478,
+      "sha256": "67e84305a96fb0039a8dca4e32b5128fc6ef1a20be368efb9a2a8b219855d08d",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/ffvi-07.sntl"
+    },
+    {
+      "id": "ffvi-10",
+      "name": "FF6 - Narshe Cavern Dance for Treasure",
+      "library": "pack-2",
+      "path": "packs/ffvi-10.sntl",
+      "bytes": 45541,
+      "sha256": "44bcaf1286b6495f58500e898e5ea022fa87ebe4aab502e62bb6a389f650ab3b",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/ffvi-10.sntl"
+    },
+    {
+      "id": "ffvi-15",
+      "name": "FF6 - Ultros Fire Dance",
+      "library": "pack-2",
+      "path": "packs/ffvi-15.sntl",
+      "bytes": 76457,
+      "sha256": "c6a0ba595824d4da4c921b461539c4e9af6e8b836dfe864da5f29a79c84f469f",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/ffvi-15.sntl"
+    },
+    {
+      "id": "ffvi-22",
+      "name": "FF6 - Forest Swarm Dance & Cure",
+      "library": "pack-2",
+      "path": "packs/ffvi-22.sntl",
+      "bytes": 57520,
+      "sha256": "ba8274a9dc00f118d4596747f62aeb3babd4423d1c7506ab187ba027e23e2fd7",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/ffvi-22.sntl"
+    },
+    {
+      "id": "ice-climber-01",
+      "name": "Ice Climber - Summit Partners",
+      "library": "pack-2",
+      "path": "packs/ice-climber-01.sntl",
+      "bytes": 14624,
+      "sha256": "49a8131687d7537c84cc104cb48d3e2431e23123d062fab6da9134f89c35d3a9",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/ice-climber-01.sntl"
+    },
+    {
+      "id": "donkey-kong-01",
+      "name": "Donkey Kong - Barrel Girders",
+      "library": "pack-2",
+      "path": "packs/donkey-kong-01.sntl",
+      "bytes": 9794,
+      "sha256": "31bb1a0408a232da1d32c8329f888d760369ef864e642b8b7d4f252a3b2f9645",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/donkey-kong-01.sntl"
+    },
+    {
+      "id": "cobra-triangle-01",
+      "name": "Cobra Triangle - River Run",
+      "library": "pack-2",
+      "path": "packs/cobra-triangle-01.sntl",
+      "bytes": 14787,
+      "sha256": "91a8737a17d37246bdd9f3a4aefc8618e8dcf735dd3d22f7630874546b1fe4a6",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/cobra-triangle-01.sntl"
+    },
+    {
+      "id": "bubble-bobble-01",
+      "name": "Bubble Bobble - Bubble Trouble",
+      "library": "pack-2",
+      "path": "packs/bubble-bobble-01.sntl",
+      "bytes": 31416,
+      "sha256": "697d192edbc13dabfd2112ffc06500a65b57e079cae820d631bbe4240690c935",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-2/packs/bubble-bobble-01.sntl"
+    }
+  ]
+}

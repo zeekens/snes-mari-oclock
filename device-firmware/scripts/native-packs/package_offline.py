@@ -25,16 +25,17 @@ def gallery(template, pack_name, scenes, version=VERSION):
     return page.replace(loader, "Promise.resolve(JSON.parse(document.getElementById('scene-data').textContent))")
 
 
-def package(group, catalog, previews, template):
+def package(group, previews, template):
     manifest = json.loads((SOURCE / group / 'manifest.json').read_text())
     manifest['version'] = VERSION
     members = {}
-    selected = {item['id']: item for item in catalog if item['library'] == group}
+    assert len(manifest['items']) == len({item['id'] for item in manifest['items']}) == 15
     scenes = []
     for item in manifest['items']:
-        entry = selected.pop(item['id'])
-        if any(item[key] != value for key, value in entry.items()):
-            raise ValueError(f'Catalog disagrees with {item["id"]}')
+        # The retained 2.0.0 manifest is the historical catalog snapshot.
+        entry = dict(item)
+        if entry['library'] != group:
+            raise ValueError(f'Wrong library for {item["id"]}')
         raw = (REPO / entry['path']).read_bytes()
         if len(raw) != entry['bytes'] or hashlib.sha256(raw).hexdigest() != entry['sha256']:
             raise ValueError(f'Bad scene asset: {item["id"]}')
@@ -44,8 +45,6 @@ def package(group, catalog, previews, template):
         atlas = item['id'] + '.png'
         members['previews/' + atlas] = (SOURCE / 'preview' / atlas).read_bytes()
         scenes.append(previews[item['id']])
-    if selected:
-        raise ValueError(f'Missing scenes: {list(selected)}')
     members['manifest.json'] = (json.dumps(manifest, indent=2) + '\n').encode()
     members['previews/index.html'] = gallery(template, manifest['name'], scenes).encode()
     members['README.md'] = (
@@ -68,10 +67,9 @@ def package(group, catalog, previews, template):
 
 if __name__ == '__main__':
     DEST.mkdir(parents=True, exist_ok=True)
-    catalog = json.loads((REPO / 'libraries/sntl-v1/catalog.json').read_text())['scenes']
     previews = {s['id']: s for s in json.loads((SOURCE / 'preview/scenes.json').read_text())}
     template = Path(__file__).with_name('preview.html').read_text()
-    archives = [package(group, catalog, previews, template) for group in ('pack-1', 'pack-3')]
+    archives = [package(group, previews, template) for group in ('pack-1', 'pack-3')]
     (DEST / 'SHA256SUMS').write_text(''.join(
         hashlib.sha256(path.read_bytes()).hexdigest() + '  ' + path.name + '\n' for path in archives
     ))

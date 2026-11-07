@@ -1,16 +1,16 @@
 {
   "name": "SNES Clock firmware",
-  "version": "sntl-2.2.0",
+  "version": "sntl-2.2.1",
   "builds": [
     {
       "chipFamily": "ESP32",
       "ota": {
-        "path": "https://git.local.weylandyutani.se/clock-firmware/releases/sntl-2.2.0.bin",
-        "md5": "0783376b37d0e144975f0162d3fc9e3a",
-        "sha256": "51ea095027f90376aa79f9a230143f2b4641b5b5cd98ea10c052e9a80bbd6176",
-        "size": 1043456,
-        "release_url": "https://github.com/zeekens/snes-mari-oclock/releases/tag/sntl-2.2.0",
-        "summary": "Centered clock typography, slower scene playback and minute-triggered actions for native packs 2.0.0. Includes rendered-frame diagnostics."
+        "path": "https://git.local.weylandyutani.se/clock-firmware/releases/sntl-2.2.1.bin",
+        "md5": "df353a3819e43946aa4d76c963c92a6e",
+        "sha256": "575409fca45d3121e3e35d30ac57f9b0e955c547a911b6a0281b2f8fe7fbbc1c",
+        "size": 1043440,
+        "release_url": "https://github.com/zeekens/snes-mari-oclock/releases/tag/sntl-2.2.1",
+        "summary": "Fixes overlapping fish in the built-in Tide Pool scene. Native packs 2.3.0 are installed separately through Refresh Scene Library."
       }
     }
   ]

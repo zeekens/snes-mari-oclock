@@ -1,0 +1,275 @@
+{
+  "physical_panel_visually_tested": false,
+  "scenes": [
+    {
+      "id": "metroid-04",
+      "name": "Super Metroid - Maridia Drifting Colony",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": true,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "allstars-01",
+      "name": "Super Mario All-Stars - Water Land Luigi's Crossing",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "dkc2-01",
+      "name": "DKC2 - Rambi Rumble Rhino Charge",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "dkc2-02",
+      "name": "DKC2 - Squawks's Shaft Lantern Flight",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "streetfighter-01",
+      "name": "Street Fighter II - Suzaku Castle Ryu versus Chun-Li",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 6.4,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "mariokart-04",
+      "name": "Super Mario Kart - Rainbow Road Yoshi under the Stars",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": true,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-03",
+      "name": "FF6 - Zozo Rain & Rooftops",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-07",
+      "name": "FF6 - Floating Continent Edge of Ruin",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": true,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 7.2,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-10",
+      "name": "FF6 - Narshe Cavern Dance for Treasure",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-15",
+      "name": "FF6 - Ultros Fire Dance",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 9.2,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-22",
+      "name": "FF6 - Forest Swarm Dance & Cure",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 9.6,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ice-climber-01",
+      "name": "Ice Climber - Summit Partners",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": true,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": 8.96,
+      "checks": {
+        "decoded_frames": 128,
+        "clock_oracle_frames": 128,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "donkey-kong-01",
+      "name": "Donkey Kong - Barrel Girders",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": 8.96,
+      "checks": {
+        "decoded_frames": 128,
+        "clock_oracle_frames": 128,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "cobra-triangle-01",
+      "name": "Cobra Triangle - River Run",
+      "library": "pack-2",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 128,
+        "clock_oracle_frames": 128,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "bubble-bobble-01",
+      "name": "Bubble Bobble - Bubble Trouble",
+      "library": "pack-2",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": 8.96,
+      "checks": {
+        "decoded_frames": 128,
+        "clock_oracle_frames": 128,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    }
+  ]
+}

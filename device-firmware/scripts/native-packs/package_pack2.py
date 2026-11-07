@@ -10,18 +10,15 @@ ARCHIVE = 'native-clock-pack-2-2.2.0.zip'
 
 
 def build():
-    catalog = json.loads((REPO / 'libraries/sntl-v1/catalog.json').read_text())
-    entries = {s['id']: s for s in catalog['scenes'] if s['library'] == 'pack-2'}
     manifest = json.loads((COLLECTION / 'pack-2/manifest.json').read_text())
-    assert len(entries) == len(manifest['items']) == 15
+    assert len(manifest['items']) == len({s['id'] for s in manifest['items']}) == 15
     for item in manifest['items']:
-        entry = entries.pop(item['id'])
+        assert item['library'] == 'pack-2'
         raw = (COLLECTION / 'pack-2' / item['path']).read_bytes()
-        assert raw == (REPO / entry['path']).read_bytes()
-        assert len(raw) == item['bytes'] == entry['bytes']
-        assert hashlib.sha256(raw).hexdigest() == item['sha256'] == entry['sha256']
-        assert item['catalog_path'] == entry['path']
-    assert not entries
+        # Historical archives retain their own asset identity as the live catalog advances.
+        assert raw == (REPO / item['catalog_path']).read_bytes()
+        assert len(raw) == item['bytes']
+        assert hashlib.sha256(raw).hexdigest() == item['sha256']
     paths = sorted(p for p in COLLECTION.rglob('*') if p.is_file()
                    and p.name not in (ARCHIVE, ARCHIVE + '.tmp', 'SHA256SUMS')
                    and '__pycache__' not in p.parts)
@@ -40,7 +37,7 @@ def build():
     (COLLECTION / 'SHA256SUMS').write_text(''.join(
         hashlib.sha256(p.read_bytes()).hexdigest() + '  ' + p.relative_to(COLLECTION).as_posix() + '\n'
         for p in sorted(paths)))
-    print(f'Pack 2: 15 scenes, {len(paths)-1} archive members, all catalog hashes verified')
+    print(f'Pack 2: 15 scenes, {len(paths)-1} archive members, historical manifest hashes verified')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "bub.png",
+    "url": "https://raw.githubusercontent.com/MiquelVillarroya/Bubble-Bobble-Replica/89c6a5dc442eabcbbd94a8de8e407bfbe344a1d6/resources/Art/Sprites/Characters/bubMoveSprite.png"
+  },
+  {
+    "file": "bob.png",
+    "url": "https://raw.githubusercontent.com/MiquelVillarroya/Bubble-Bobble-Replica/89c6a5dc442eabcbbd94a8de8e407bfbe344a1d6/resources/Art/Sprites/Characters/bobMoveSprite.png"
+  },
+  {
+    "file": "zenchan.png",
+    "url": "https://raw.githubusercontent.com/MiquelVillarroya/Bubble-Bobble-Replica/89c6a5dc442eabcbbd94a8de8e407bfbe344a1d6/resources/Art/Sprites/Enemies/zenchanSprite.png"
+  },
+  {
+    "file": "bubbles.png",
+    "url": "https://raw.githubusercontent.com/MiquelVillarroya/Bubble-Bobble-Replica/89c6a5dc442eabcbbd94a8de8e407bfbe344a1d6/resources/Art/Sprites/Bubbles%26Items/bubbles.png"
+  },
+  {
+    "file": "level1.png",
+    "url": "https://raw.githubusercontent.com/MiquelVillarroya/Bubble-Bobble-Replica/89c6a5dc442eabcbbd94a8de8e407bfbe344a1d6/resources/Art/LevelArt/level1.png"
+  },
+  {
+    "file": "items.png",
+    "url": "https://raw.githubusercontent.com/MiquelVillarroya/Bubble-Bobble-Replica/89c6a5dc442eabcbbd94a8de8e407bfbe344a1d6/resources/Art/Sprites/Bubbles%26Items/items.png"
+  }
+]

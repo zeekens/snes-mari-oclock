@@ -1,0 +1,275 @@
+{
+  "physical_panel_visually_tested": false,
+  "scenes": [
+    {
+      "id": "zelda-03",
+      "name": "Zelda ALTTP - Fairy Fountain Wings over Water",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": true,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "zelda-04",
+      "name": "Zelda ALTTP - Sanctuary Zelda's Escort",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "zelda-05",
+      "name": "Zelda ALTTP - Pyramid Chamber Ganon's Fire Ring",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "metroid-01",
+      "name": "Super Metroid - Crateria Gunship Arrival",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "yoshi-03",
+      "name": "Yoshi's Island - Kamek's Flight Midnight Magic",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "allstars-03",
+      "name": "Super Mario All-Stars - Bowser's Keep Fire and Falling Bricks",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "dkc2-03",
+      "name": "DKC2 - Gloomy Gulch Dixie's Lantern",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-02",
+      "name": "FF6 - Figaro Desert Citadel",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-06",
+      "name": "FF6 - Blackjack Above the Clouds",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-08",
+      "name": "FF6 - Magitek Esper Chamber",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-12",
+      "name": "FF6 - Phantom Forest Interceptor!",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-14",
+      "name": "FF6 - South Figaro Rooftop Escape",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": true,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-16",
+      "name": "FF6 - Figaro Desert Chocobo Dash",
+      "library": "pack-3",
+      "mode": "continuous",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 80,
+      "action_seconds": null,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-17",
+      "name": "FF6 - Ultros Fire on the River",
+      "library": "pack-3",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 10.0,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    },
+    {
+      "id": "ffvi-19",
+      "name": "FF6 - Magitek Armor Runic & Ice",
+      "library": "pack-3",
+      "mode": "minute",
+      "choreography_changed": false,
+      "frame_ms": 80,
+      "previous_frame_ms": 60,
+      "action_seconds": 10.0,
+      "checks": {
+        "decoded_frames": 300,
+        "clock_oracle_frames": 300,
+        "incremental_seek_clock_checks": 2000,
+        "sanitizers": true,
+        "timing_and_malformed_input": true,
+        "cadence_aligned_to_40ms": true
+      }
+    }
+  ]
+}

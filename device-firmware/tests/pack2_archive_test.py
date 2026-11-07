@@ -1,4 +1,4 @@
-"""Validate Pack 2's portable archive, catalog identity, and embedded preview data."""
+"""Validate historical Pack 2 2.2.0 independently of the advancing live catalog."""
 import hashlib
 import json
 import re
@@ -8,19 +8,20 @@ from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[2]
 COLLECTION = ROOT / 'collections/native-clock-pack-2-2.2.0'
-raw_catalog = (ROOT / 'libraries/sntl-v1/catalog.json').read_bytes()
-catalog = json.loads(raw_catalog)
-assert len(raw_catalog) <= 24000 and len(catalog['scenes']) == 45
-entries = {s['id']: s for s in catalog['scenes']}
-assert len(entries) == 45
+retained = json.loads((COLLECTION / 'pack-2/manifest.json').read_text())
+entries = {s['id']: s for s in retained['items']}
+assert len(entries) == len(retained['items']) == 15
 for item in entries.values():
-    raw = (ROOT / item['path']).read_bytes()
+    assert item['library'] == 'pack-2'
+    raw = (ROOT / item['catalog_path']).read_bytes()
+    assert raw == (COLLECTION / 'pack-2' / item['path']).read_bytes()
     assert len(raw) == item['bytes'] <= 160 * 1024
     assert hashlib.sha256(raw).hexdigest() == item['sha256']
 
 with ZipFile(COLLECTION / 'native-clock-pack-2-2.2.0.zip') as archive:
     assert archive.testzip() is None
     manifest = json.loads(archive.read('pack-2/manifest.json'))
+    assert manifest == retained
     assert manifest['version'] == '2.2.0' and len(manifest['items']) == 15
     scenes = json.loads(archive.read('previews/scenes.json'))
     html = archive.read('previews/index.html').decode()
@@ -34,8 +35,8 @@ with ZipFile(COLLECTION / 'native-clock-pack-2-2.2.0.zip') as archive:
     for item in manifest['items']:
         entry = entries[item['id']]
         raw = archive.read('pack-2/' + item['path'])
-        assert item['catalog_path'] == entry['path']
-        assert raw == (ROOT / entry['path']).read_bytes()
+        assert item['catalog_path'] == entry['catalog_path']
+        assert raw == (ROOT / entry['catalog_path']).read_bytes()
         assert len(raw) == item['bytes'] and hashlib.sha256(raw).hexdigest() == item['sha256']
         scene = previews[item['id']]
         frames = struct.unpack_from('<H', raw, 8)[0]
@@ -63,4 +64,4 @@ with ZipFile(COLLECTION / 'native-clock-pack-2-2.2.0.zip') as archive:
 for line in (COLLECTION / 'SHA256SUMS').read_text().splitlines():
     digest, name = line.split('  ', 1)
     assert hashlib.sha256((COLLECTION / name).read_bytes()).hexdigest() == digest, name
-print('45 catalog assets; 15 portable Pack 2 scenes; unchanged previous assets; embedded preview metadata, timing, fonts, atlases and checksums passed')
+print('15 historical Pack 2 scenes; unchanged previous assets; retained manifest identity, embedded preview metadata, timing, fonts, atlases and checksums passed')

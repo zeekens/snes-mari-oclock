@@ -407,8 +407,8 @@ LOWER(0xf6,10,0,14,17,17,17,14)
       pixels.fill(0x082941);r(0,24,64,18,0x08465e);r(0,42,64,22,0x086375);
       for(int x=-12;x<76;x+=12){int xx=x+int(t*2)%12;stroke(xx,2,xx+3,1,0x57b9c4);stroke(xx+3,1,xx+8,1,0x57b9c4);stroke(xx+8,1,xx+11,2,0x57b9c4);}
       int bx[]={7,31,51},bo[]={0,11,21};for(int i=0;i<3;i++)bubble(bx[i],58-int(std::fmod(t*3+bo[i],33)),0x6fb5bf);
-      native(fish,20+wave(t,12,17),28+wave(t,4,.5),std::cos(t/12*6.283185307)>0);
-      native(fish,25-wave(t,12,18),42+wave(t,4,.5,2),std::cos(t/12*6.283185307)<0);
+      native(fish,20+wave(t,12,17),25+wave(t,4,.5),std::cos(t/12*6.283185307)>0);
+      native(fish,25-wave(t,12,18),43+wave(t,4,.5,2),std::cos(t/12*6.283185307)<0);
       int sx[]={3,8,55,61},sh[]={16,10,15,20};for(int i=0;i<4;i++){int x=sx[i],w=iround(wave(t,4,1,x));stroke(x,61,x,54,0x3ca264,2);stroke(x,54,x+w,61-sh[i],0x3ca264,2);stroke(x,54,x-2+w,50,0x78c76c);}
       r(0,60,64,4,0xccb886);r(0,59,64,1,0xf1dfaa);for(int x:{12,31,48})r(x,62,2,1,0x8e785c);
       scene_time(hour,minute,valid,6,0xd0ffeb);if(age>=0&&age<1)for(int x:{15,24,40})bubble(x,27-int(age*9),0x99e1da);

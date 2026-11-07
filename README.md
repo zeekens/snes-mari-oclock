@@ -2,6 +2,10 @@
 
 ## Current native packs
 
+**2.3.0 reviewed update:** [Release details](collections/native-clock-packs-2.3.0/README.md). Includes Bubble Bobble, six native choreography fixes and 15 cadence corrections. Tide Pool’s built-in fix is in companion firmware sntl-2.2.1. Refresh the library and reselect a scene to load the updated asset.
+
+The GIFs further below are historical previews; the 2.3.0 ZIPs contain the current playback previews.
+
 **45 scenes across Pack 1 / Pack 2 / Pack 3 (15 / 15 / 15)**, using firmware
 **sntl-2.2.0 or later**. Clock colons are centered, names use `Game - Scene`,
 15 action scenes react to the minute change, and 30 travel/ambient scenes play
@@ -12,9 +16,9 @@ then choose **Library** and **Scene**. The selected SNTL asset downloads from th
 verified GitHub revision and stays in the device's persistent cache. Scene changes
 do not require rebuilding or reflashing firmware.
 
-- [Pack 1 ZIP · 2.0.1](collections/native-clock-packs-2.0.1/native-clock-pack-1-2.0.1.zip)
-- [Pack 2 ZIP · 2.2.0](collections/native-clock-pack-2-2.2.0/native-clock-pack-2-2.2.0.zip)
-- [Pack 3 ZIP · 2.0.1](collections/native-clock-packs-2.0.1/native-clock-pack-3-2.0.1.zip)
+- [Pack 1 ZIP · 2.3.0](collections/native-clock-packs-2.3.0/native-clock-pack-1-2.3.0.zip)
+- [Pack 2 ZIP · 2.3.0](collections/native-clock-packs-2.3.0/native-clock-pack-2-2.3.0.zip)
+- [Pack 3 ZIP · 2.3.0](collections/native-clock-packs-2.3.0/native-clock-pack-3-2.3.0.zip)
 - [Quality policy and format](device-firmware/docs/SCENE-PACK-QUALITY.md)
 - [All-scene device validation](device-firmware/docs/SCENE-PACK-VALIDATION.md)
 

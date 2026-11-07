@@ -1,0 +1,144 @@
+{
+  "name": "Pack 1",
+  "version": "2.3.0",
+  "format": "SNTL",
+  "format_version": 2,
+  "minimum_firmware": "sntl-2.2.0",
+  "items": [
+    {
+      "id": "zelda-01",
+      "name": "Zelda ALTTP - Light World Link's House Overworld",
+      "library": "pack-1",
+      "path": "packs/zelda-01.sntl",
+      "bytes": 17958,
+      "sha256": "7208326037e6dfa0191d49d1cb7163b887ed8a10547d09d37913c0b23310c598",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/zelda-01.sntl"
+    },
+    {
+      "id": "metroid-05",
+      "name": "Super Metroid - Escape Shaft Samus's Lift",
+      "library": "pack-1",
+      "path": "packs/metroid-05.sntl",
+      "bytes": 36498,
+      "sha256": "566cf210398f4a1716ecd3974fbe71dd3e85f60415b437843d92dcd51fd9f88b",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/metroid-05.sntl"
+    },
+    {
+      "id": "yoshi-04",
+      "name": "Yoshi's Island - Egg Garden Yoshi Meets the Parade",
+      "library": "pack-1",
+      "path": "packs/yoshi-04.sntl",
+      "bytes": 45379,
+      "sha256": "3cb7684bc7cf350eaefd86877f6d60f57ee3b530fd58e62da19f6215518e16dc",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/yoshi-04.sntl"
+    },
+    {
+      "id": "megaman-01",
+      "name": "Mega Man X - Central Highway Zero's Charge",
+      "library": "pack-1",
+      "path": "packs/megaman-01.sntl",
+      "bytes": 31628,
+      "sha256": "f7d842312e0f94ac3c5678eaf8acaab672129e7ee91a45b5c43dd96e40b5a9f8",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/megaman-01.sntl"
+    },
+    {
+      "id": "megaman-03",
+      "name": "Mega Man X - Sting Chameleon Forest X's Buster",
+      "library": "pack-1",
+      "path": "packs/megaman-03.sntl",
+      "bytes": 67806,
+      "sha256": "e9bfc13ed208ce268668476b782a4431fb4914b4c7f05b3cfd6b0a1118adc37e",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/megaman-03.sntl"
+    },
+    {
+      "id": "castlevania-03",
+      "name": "Super Castlevania IV - Castle Approach Simon's Whip",
+      "library": "pack-1",
+      "path": "packs/castlevania-03.sntl",
+      "bytes": 27921,
+      "sha256": "45f27354f650d73bbd576bde865c5ab256d197e5b79ec298a49cd7c702e9d4f7",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/castlevania-03.sntl"
+    },
+    {
+      "id": "streetfighter-02",
+      "name": "Street Fighter II - Brazil Ryu versus Blanka",
+      "library": "pack-1",
+      "path": "packs/streetfighter-02.sntl",
+      "bytes": 47548,
+      "sha256": "ae0da70e46ac978f9928e036bc3cb1da87dbb0f80f7290b87e4247cad5ea07a5",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/streetfighter-02.sntl"
+    },
+    {
+      "id": "mariokart-01",
+      "name": "Super Mario Kart - Mario Circuit Mario's Solo Lap",
+      "library": "pack-1",
+      "path": "packs/mariokart-01.sntl",
+      "bytes": 51079,
+      "sha256": "3edf1dba3e66c904288a79da13cd4b9fd52072df4eee934aa4a9a37ec0108e06",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/mariokart-01.sntl"
+    },
+    {
+      "id": "mariokart-05",
+      "name": "Super Mario Kart - Mario Circuit 1 Whole-Course Minimap",
+      "library": "pack-1",
+      "path": "packs/mariokart-05.sntl",
+      "bytes": 46372,
+      "sha256": "b9b8c182ca740cb1fc2d78fd960a6a9e4723fd2bb343ecfc7c1d50cea067e820",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/mariokart-05.sntl"
+    },
+    {
+      "id": "ffvi-01",
+      "name": "FF6 - Narshe Snowfall",
+      "library": "pack-1",
+      "path": "packs/ffvi-01.sntl",
+      "bytes": 74949,
+      "sha256": "732fb7fbc38ad6b1e71813180fc539b5fa4ad8d69b3dabfef6217d0ebbcae69a",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/ffvi-01.sntl"
+    },
+    {
+      "id": "ffvi-05",
+      "name": "FF6 - Phantom Train Last Departure",
+      "library": "pack-1",
+      "path": "packs/ffvi-05.sntl",
+      "bytes": 62625,
+      "sha256": "deebec7faf27a8ecc50217aa4270d0765e1b831e418e6715fa49526569b64a11",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/ffvi-05.sntl"
+    },
+    {
+      "id": "ffvi-09",
+      "name": "FF6 - Lete River Hold On!",
+      "library": "pack-1",
+      "path": "packs/ffvi-09.sntl",
+      "bytes": 83335,
+      "sha256": "3a4c238262b54ad91d99ded89ee8a5e2e9277ca70c7688ccd351fd649cc1a5be",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/ffvi-09.sntl"
+    },
+    {
+      "id": "ffvi-11",
+      "name": "FF6 - Opera House A Rose for You",
+      "library": "pack-1",
+      "path": "packs/ffvi-11.sntl",
+      "bytes": 16733,
+      "sha256": "52501c4abdd85959128e15bde38b0a92593adfd798983768f76559693b175d3a",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/ffvi-11.sntl"
+    },
+    {
+      "id": "ffvi-13",
+      "name": "FF6 - Sealed Gate Esper Awakening",
+      "library": "pack-1",
+      "path": "packs/ffvi-13.sntl",
+      "bytes": 129705,
+      "sha256": "87eef473f1e9b42f955eac7540a7f7499f4add6354c19a1705669851cf27af84",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/ffvi-13.sntl"
+    },
+    {
+      "id": "ffvi-18",
+      "name": "FF6 - Whelk Shell Shock",
+      "library": "pack-1",
+      "path": "packs/ffvi-18.sntl",
+      "bytes": 18131,
+      "sha256": "1ca22aca42848d34c2719c22eae3607e11def60b92cfcd43de3e48bb614c8b13",
+      "catalog_path": "collections/native-clock-packs-2.3.0/pack-1/packs/ffvi-18.sntl"
+    }
+  ]
+}
